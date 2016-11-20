@@ -15,9 +15,9 @@ What is done:
  - I fix it with better set params ability... so it now looks niceier!!!
 
 
-Use it. Contriburte it.
+Use it. Contribute to it.
 
-it can be seamlesly used in ES2015/2016 way using [babel.js](https://babeljs.io/).
+it can be seamlessly used in ES2015/2016 way using [babel.js](https://babeljs.io/).
 with new javascript code features like `yield` or `async` `wait` to put some sugar on your code. 
 
 Examples
@@ -26,9 +26,9 @@ Examples
 Initialize
 
 ```javascript
-var MWS = require('mws-sdk-promises'),
-    client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {}),
-    MarketplaceId = "ATVPDKIKX0DER";
+var MWS = require('elderfo-mws-sdk-promises');
+var client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {});
+var marketplaceId = "ATVPDKIKX0DER";
 ```
 
 now you can use it 
@@ -81,17 +81,13 @@ getListOrders(client, {
 Tests
 -----
 
-1. Fill in the values for `env.sh` and run tests:
+1. Create a file `.env` in the root directory and add and fill out the following:
 
   ```
-  cd cloneOfThisProject
-  . ./env.sh
-  npm test
+  MerchantId=
+  AccessKey=
+  MarketPlaceId=
+  SecretKey=
   ```
-2. To see more logs while running tests, choose from:
-
-  ```
-  NODE_DEBUG=request npm test
-  NODE_ENV=development npm test
-  NODE_ENV=development NODE_DEBUG=request npm test
-  ```
+  
+2. Run `npm test` or `yarn run test` to execute tests. (Note: you can turn on a test watcher by running `start run test:watch` or `yarn run test:watch`)

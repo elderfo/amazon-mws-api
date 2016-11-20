@@ -1,5 +1,5 @@
 {
-  "name": "mws-sdk-promises",
+  "name": "elderfo-mws-sdk-promises",
   "description": "Amazon Marketplace Web Services client with support for all api calls, using ES6 Promises.",
   "keywords": [
     "mws",
@@ -15,38 +15,52 @@
     "email": "robbies@eibbors.net",
     "url": "http://eibbors.net"
   },
-  "contributors": [{
-    "name": "Adrian Sanchezdelc",
-    "email": "adrian@ticadia.com"
-  }, {
-    "name": "David F. Sklar",
-    "email": "dfsklar@gmail.com"
-  }, {
-    "name": "Alex I. Vedmedenko",
-    "email": "vedmalex@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Adrian Sanchezdelc",
+      "email": "adrian@ticadia.com"
+    },
+    {
+      "name": "David F. Sklar",
+      "email": "dfsklar@gmail.com"
+    },
+    {
+      "name": "Alex I. Vedmedenko",
+      "email": "vedmalex@gmail.com"
+    },
+    {
+      "name": "Chris Getsfred",
+      "email": "cgetsfred@gmail.com"
+    }
+  ],
   "main": "./lib/mws",
   "directories": {
     "lib": "./lib"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vedmalex/mws-sdk.git"
+    "url": "https://github.com/elderfo/mws-sdk.git"
   },
   "dependencies": {
-    "xml2js": "^0.4.17",
     "bluebird": "3.4.1",
+    "dotenv": "^2.0.0",
+    "request": "^2.60.0",
     "underscore": "^1.8.3",
-    "request": "^2.60.0"
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
-    "assert": "^1.3.0",
-    "mocha": "^2.2.5"
+    "babel-cli": "^6.18.0",
+    "babel-jest": "^17.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "jest-cli": "^17.0.3",
+    "semantic-release": "^6.3.2"
   },
   "scripts": {
-    "test": "mocha -t 5000"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "bugs": {
-    "url": "https://github.com/ticadia/mws-sdk/issues"
-  }
+    "url": "https://github.com/elderfo/mws-sdk/issues"
+  },
+  "jest": {}
 }
