@@ -1,1 +1,3 @@
-module.exports = require('./lib/mws');
+import mws from './lib/mws';
+
+export default mws;
