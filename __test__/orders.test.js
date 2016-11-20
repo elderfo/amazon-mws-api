@@ -2,7 +2,6 @@ import dotenv from 'dotenv';
 import MWS from  '../';
 
 
-
 describe('Orders', () => {
   const env = process.env;
   const explicitArray = false;
@@ -23,7 +22,8 @@ describe('Orders', () => {
       expect(orders.length).toBeGreaterThan(0);
       expect(orders.length).toBeLessThan(10000);
 
-      const nextToken = resp.ListOrdersResponse.ListOrdersResult.Orders.NextToke
+      const nextToken = resp.ListOrdersResponse.ListOrdersResult.NextToken;
+      expect(nextToken).toBeDefined();
     });
   });
   
