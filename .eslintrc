@@ -36,7 +36,8 @@
       {
         "devDependencies": [
           "**/*.test.js",
-          "**/*.dev.js"
+          "**/*.dev.js",
+          "**/tools/**/*.js"
         ]
       }
     ]
