@@ -1,0 +1,886 @@
+exports[`Fba CreateLineItems#add should be able to chain 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "DisplayableComment": "comment",
+      "GiftMessage": "giftMessage",
+      "PerUnitDeclaredValue.CurrencyCode": "decValueCurrency",
+      "PerUnitDeclaredValue.Value": "decUnitValue",
+      "Quantity": "quantity",
+      "SellerFulfillmentOrderItemId": "orderItemId",
+      "SellerSKU": "sellerSku",
+    },
+    Object {
+      "DisplayableComment": "comment1",
+      "GiftMessage": "giftMessage1",
+      "PerUnitDeclaredValue.CurrencyCode": "decValueCurrency1",
+      "PerUnitDeclaredValue.Value": "decUnitValue1",
+      "Quantity": "quantity1",
+      "SellerFulfillmentOrderItemId": "orderItemId1",
+      "SellerSKU": "sellerSku1",
+    },
+  ],
+  "pre": "Items.member",
+}
+`;
+
+exports[`Fba CreateLineItems#add should perform expected work 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "DisplayableComment": "comment",
+      "GiftMessage": "giftMessage",
+      "PerUnitDeclaredValue.CurrencyCode": "decValueCurrency",
+      "PerUnitDeclaredValue.Value": "decUnitValue",
+      "Quantity": "quantity",
+      "SellerFulfillmentOrderItemId": "orderItemId",
+      "SellerSKU": "sellerSku",
+    },
+  ],
+  "pre": "Items.member",
+}
+`;
+
+exports[`Fba FulfillmentPolicies should return the expected values 1`] = `
+EnumType {
+  "FillAll": false,
+  "FillAllAvailable": false,
+  "FillOrKill": false,
+  "_choices": Array [
+    "FillOrKill",
+    "FillAll",
+    "FillAllAvailable",
+  ],
+}
+`;
+
+exports[`Fba InboundShipmentItems#add should be able to chain 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "QuantityShipped": "quantityShipped",
+      "SellerSKU": "sellerSku",
+    },
+    Object {
+      "QuantityShipped": "quantityShipped1",
+      "SellerSKU": "sellerSku1",
+    },
+  ],
+  "pre": "InboundShipmentItems.member",
+}
+`;
+
+exports[`Fba InboundShipmentItems#add should perform expected work 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "QuantityShipped": "quantityShipped",
+      "SellerSKU": "sellerSku",
+    },
+  ],
+  "pre": "InboundShipmentItems.member",
+}
+`;
+
+exports[`Fba InboundShipmentPlanRequestItems#add should be able to chain 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "ASIN": "asin",
+      "Condition": "condition",
+      "Quantity": "quantity",
+      "SellerSKU": "sellerSku",
+    },
+    Object {
+      "ASIN": "asin1",
+      "Condition": "condition1",
+      "Quantity": "quantity1",
+      "SellerSKU": "sellerSku1",
+    },
+  ],
+  "pre": "InboundShipmentPlanRequestItems.member",
+}
+`;
+
+exports[`Fba InboundShipmentPlanRequestItems#add should perform expected work 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "ASIN": "asin",
+      "Condition": "condition",
+      "Quantity": "quantity",
+      "SellerSKU": "sellerSku",
+    },
+  ],
+  "pre": "InboundShipmentPlanRequestItems.member",
+}
+`;
+
+exports[`Fba PreviewLineItems#add should be able to chain 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "EstimatedShippingWeight": "estShipWeight",
+      "Quantity": "quantity",
+      "SellerFulfillmentOrderItemId": "orderItemId",
+      "SellerSKU": "sellerSku",
+      "ShippingWeightCalculationMethod": "weightCalcMethod",
+    },
+    Object {
+      "EstimatedShippingWeight": "estShipWeight1",
+      "Quantity": "quantity1",
+      "SellerFulfillmentOrderItemId": "orderItemId1",
+      "SellerSKU": "sellerSku1",
+      "ShippingWeightCalculationMethod": "weightCalcMethod1",
+    },
+  ],
+  "pre": "Items.member",
+}
+`;
+
+exports[`Fba PreviewLineItems#add should perform expected work 1`] = `
+ComplexListType {
+  "add": [Function],
+  "members": Array [
+    Object {
+      "EstimatedShippingWeight": "estShipWeight",
+      "Quantity": "quantity",
+      "SellerFulfillmentOrderItemId": "orderItemId",
+      "SellerSKU": "sellerSku",
+      "ShippingWeightCalculationMethod": "weightCalcMethod",
+    },
+  ],
+  "pre": "Items.member",
+}
+`;
+
+exports[`Fba ResponseGroups should return the expected values 1`] = `
+EnumType {
+  "Basic": false,
+  "Detailed": false,
+  "_choices": Array [
+    "Basic",
+    "Detailed",
+  ],
+}
+`;
+
+exports[`Fba ShippingSpeedCategories should return the expected values 1`] = `
+EnumType {
+  "Expedited": false,
+  "Priority": false,
+  "Standard": false,
+  "_choices": Array [
+    "Standard",
+    "Expedited",
+    "Priority",
+  ],
+}
+`;
+
+exports[`Fba inbound.CreateInboundShipment should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "CreateInboundShipment",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "InboundShipmentHeader.AreCasesRequired": Object {
+      "name": "InboundShipmentHeader.AreCasesRequired",
+      "required": false,
+    },
+    "InboundShipmentHeader.DestinationFulfillmentCenterId": Object {
+      "name": "InboundShipmentHeader.DestinationFulfillmentCenterId",
+      "required": true,
+    },
+    "InboundShipmentHeader.IntendedBoxContentsSource": Object {
+      "name": "InboundShipmentHeader.IntendedBoxContentsSource",
+      "required": false,
+    },
+    "InboundShipmentHeader.LabelPrepPreference": Object {
+      "name": "InboundShipmentHeader.LabelPrepPreference",
+    },
+    "InboundShipmentHeader.ShipFromAddress.AddressLine1": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.AddressLine1",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.AddressLine2": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.AddressLine2",
+      "required": false,
+    },
+    "InboundShipmentHeader.ShipFromAddress.City": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.City",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.CountryCode": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.CountryCode",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.DistrictOrCounty": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.DistrictOrCounty",
+      "required": false,
+    },
+    "InboundShipmentHeader.ShipFromAddress.Name": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.Name",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.PostalCode": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.PostalCode",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.StateOrProvinceCode": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.StateOrProvinceCode",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipmentName": Object {
+      "name": "InboundShipmentHeader.ShipmentName",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipmentStatus": Object {
+      "name": "InboundShipmentHeader.ShipmentStatus",
+      "required": true,
+    },
+    "InboundShipmentItems": Object {
+      "construct": [Function],
+      "name": "InboundShipmentItems",
+      "required": true,
+      "type": "Complex",
+    },
+    "ShipmentId": Object {
+      "name": "ShipmentId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "AreCasesRequired": "InboundShipmentHeader.AreCasesRequired",
+    "DestinationFulfillmentCenterId": "InboundShipmentHeader.DestinationFulfillmentCenterId",
+    "IntendedBoxContentsSource": "InboundShipmentHeader.IntendedBoxContentsSource",
+    "LabelPrepPreference": "InboundShipmentHeader.LabelPrepPreference",
+    "ShipFromAddressCity": "InboundShipmentHeader.ShipFromAddress.City",
+    "ShipFromAddressLine1": "InboundShipmentHeader.ShipFromAddress.AddressLine1",
+    "ShipFromAddressLine2": "InboundShipmentHeader.ShipFromAddress.AddressLine2",
+    "ShipFromCountryCode": "InboundShipmentHeader.ShipFromAddress.CountryCode",
+    "ShipFromDistrictOrCounty": "InboundShipmentHeader.ShipFromAddress.DistrictOrCounty",
+    "ShipFromName": "InboundShipmentHeader.ShipFromAddress.Name",
+    "ShipFromPostalCode": "InboundShipmentHeader.ShipFromAddress.PostalCode",
+    "ShipFromStateOrProvince": "InboundShipmentHeader.ShipFromAddress.StateOrProvinceCode",
+    "ShipmentStatus": "InboundShipmentHeader.ShipmentStatus",
+    "Shipmentname": "InboundShipmentHeader.ShipmentName",
+  },
+}
+`;
+
+exports[`Fba inbound.CreateInboundShipmentPlan should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "CreateInboundShipmentPlan",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "InboundShipmentPlanRequestItems": Object {
+      "construct": [Function],
+      "name": "InboundShipmentPlanRequestItems",
+      "required": true,
+      "type": "Complex",
+    },
+    "LabelPrepPreference": Object {
+      "name": "LabelPrepPreference",
+      "required": true,
+    },
+    "ShipFromAddress.AddressLine1": Object {
+      "name": "ShipFromAddress.AddressLine1",
+    },
+    "ShipFromAddress.AddressLine2": Object {
+      "name": "ShipFromAddress.AddressLine2",
+    },
+    "ShipFromAddress.City": Object {
+      "name": "ShipFromAddress.City",
+    },
+    "ShipFromAddress.CountryCode": Object {
+      "name": "ShipFromAddress.CountryCode",
+    },
+    "ShipFromAddress.DistrictOrCounty": Object {
+      "name": "ShipFromAddress.DistrictOrCounty",
+    },
+    "ShipFromAddress.Name": Object {
+      "name": "ShipFromAddress.Name",
+    },
+    "ShipFromAddress.PostalCode": Object {
+      "name": "ShipFromAddress.PostalCode",
+    },
+    "ShipFromAddress.StateOrProvinceCode": Object {
+      "name": "ShipFromAddress.StateOrProvinceCode",
+    },
+  },
+  "paramsMap": Object {
+    "ShipFromAddressLine1": "ShipFromAddress.AddressLine1",
+    "ShipFromAddressLine2": "ShipFromAddress.AddressLine2",
+    "ShipFromCity": "ShipFromAddress.City",
+    "ShipFromCountryCode": "ShipFromAddress.CountryCode",
+    "ShipFromDistrictOrCounty": "ShipFromAddress.DistrictOrCounty",
+    "ShipFromName": "ShipFromAddress.Name",
+    "ShipFromPostalCode": "ShipFromAddress.PostalCode",
+    "ShipFromStateOrProvince": "ShipFromAddress.StateOrProvinceCode",
+  },
+}
+`;
+
+exports[`Fba inbound.GetServiceStatus should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetServiceStatus",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba inbound.ListInboundShipmentItems should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListInboundShipmentItems",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "LastUpdatedAfter": Object {
+      "name": "LastUpdatedAfter",
+      "type": "Timestamp",
+    },
+    "LastUpdatedBefore": Object {
+      "name": "LastUpdatedBefore",
+      "type": "Timestamp",
+    },
+    "ShipmentId": Object {
+      "name": "ShipmentId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba inbound.ListInboundShipmentItemsByNextToken should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListInboundShipmentItemsByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba inbound.ListInboundShipments should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListInboundShipments",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "LastUpdatedAfter": Object {
+      "name": "LastUpdatedAfter",
+      "type": "Timestamp",
+    },
+    "LastUpdatedBefore": Object {
+      "name": "LastUpdatedBefore",
+      "type": "Timestamp",
+    },
+    "ShipmentIdList.member": Object {
+      "list": true,
+      "name": "ShipmentIdList.member",
+      "required": false,
+    },
+    "ShipmentStatusList.member": Object {
+      "list": true,
+      "name": "ShipmentStatusList.member",
+      "required": false,
+    },
+  },
+  "paramsMap": Object {
+    "ShipmentIds": "ShipmentIdList.member",
+    "ShipmentStatuses": "ShipmentStatusList.member",
+  },
+}
+`;
+
+exports[`Fba inbound.ListInboundShipmentsByNextToken should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListInboundShipmentsByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba inbound.UpdateInboundShipment should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "UpdateInboundShipment",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "InboundShipmentHeader.DestinationFulfillmentCenterId": Object {
+      "name": "InboundShipmentHeader.DestinationFulfillmentCenterId",
+      "required": true,
+    },
+    "InboundShipmentHeader.LabelPrepPreference": Object {
+      "name": "InboundShipmentHeader.LabelPrepPreference",
+    },
+    "InboundShipmentHeader.ShipFromAddress.AddressLine1": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.AddressLine1",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.AddressLine2": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.AddressLine2",
+      "required": false,
+    },
+    "InboundShipmentHeader.ShipFromAddress.City": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.City",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.CountryCode": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.CountryCode",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.DistrictOrCounty": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.DistrictOrCounty",
+      "required": false,
+    },
+    "InboundShipmentHeader.ShipFromAddress.Name": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.Name",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.PostalCode": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.PostalCode",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipFromAddress.StateOrProvinceCode": Object {
+      "name": "InboundShipmentHeader.ShipFromAddress.StateOrProvinceCode",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipmentName": Object {
+      "name": "InboundShipmentHeader.ShipmentName",
+      "required": true,
+    },
+    "InboundShipmentHeader.ShipmentStatus": Object {
+      "name": "InboundShipmentHeader.ShipmentStatus",
+    },
+    "InboundShipmentItems": Object {
+      "construct": [Function],
+      "name": "InboundShipmentItems",
+      "required": true,
+      "type": "Complex",
+    },
+    "ShipmentId": Object {
+      "name": "ShipmentId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "DestinationFulfillmentCenterId": "InboundShipmentHeader.DestinationFulfillmentCenterId",
+    "LabelPrepPreference": "InboundShipmentHeader.LabelPrepPreference",
+    "ShipFromAddressCity": "InboundShipmentHeader.ShipFromAddress.City",
+    "ShipFromAddressLine1": "InboundShipmentHeader.ShipFromAddress.AddressLine1",
+    "ShipFromAddressLine2": "InboundShipmentHeader.ShipFromAddress.AddressLine2",
+    "ShipFromCountryCode": "InboundShipmentHeader.ShipFromAddress.CountryCode",
+    "ShipFromDistrictOrCounty": "InboundShipmentHeader.ShipFromAddress.DistrictOrCounty",
+    "ShipFromName": "InboundShipmentHeader.ShipFromAddress.Name",
+    "ShipFromPostalCode": "InboundShipmentHeader.ShipFromAddress.PostalCode",
+    "ShipFromStateOrProvince": "InboundShipmentHeader.ShipFromAddress.StateOrProvinceCode",
+    "ShipmentName": "InboundShipmentHeader.ShipmentName",
+    "ShipmentStatus": "InboundShipmentHeader.ShipmentStatus",
+  },
+}
+`;
+
+exports[`Fba inventory.GetServiceStatus should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetServiceStatus",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInventory/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba inventory.ListInventorySupply should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListInventorySupply",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInventory/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "QueryStartDateTime": Object {
+      "name": "QueryStartDateTime",
+      "type": "Timestamp",
+    },
+    "ResponseGroup": Object {
+      "name": "ResponseGroup",
+    },
+    "SellerSkus.member": Object {
+      "list": true,
+      "name": "SellerSkus.member",
+    },
+  },
+  "paramsMap": Object {
+    "SellerSkus": "SellerSkus.member",
+  },
+}
+`;
+
+exports[`Fba inventory.ListInventorySupplyByNextToken should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListInventorySupplyByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentInventory/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba outbound.CancelFulfillmentOrder should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "CancelFulfillmentOrder",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "SellerFulfillmentOrderId": Object {
+      "name": "SellerFulfillmentOrderId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba outbound.CreateFulfillmentOrder should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "CreateFulfillmentOrder",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "DestinationAddress.City": Object {
+      "name": "DestinationAddress.City",
+    },
+    "DestinationAddress.CountryCode": Object {
+      "name": "DestinationAddress.CountryCode",
+    },
+    "DestinationAddress.DistrictOrCounty": Object {
+      "name": "DestinationAddress.DistrictOrCounty",
+    },
+    "DestinationAddress.Line1": Object {
+      "name": "DestinationAddress.Line1",
+    },
+    "DestinationAddress.Line2": Object {
+      "name": "DestinationAddress.Line2",
+    },
+    "DestinationAddress.Line3": Object {
+      "name": "DestinationAddress.Line3",
+    },
+    "DestinationAddress.Name": Object {
+      "name": "DestinationAddress.Name",
+    },
+    "DestinationAddress.PhoneNumber": Object {
+      "name": "DestinationAddress.PhoneNumber",
+    },
+    "DestinationAddress.PostalCode": Object {
+      "name": "DestinationAddress.PostalCode",
+    },
+    "DestinationAddress.StateOrProvinceCode": Object {
+      "name": "DestinationAddress.StateOrProvinceCode",
+    },
+    "DisplayableOrderComment": Object {
+      "name": "DisplayableOrderComment",
+    },
+    "DisplayableOrderDateTime": Object {
+      "name": "DisplayableOrderDateTime",
+      "type": "Timestamp",
+    },
+    "DisplayableOrderId": Object {
+      "name": "DisplayableOrderId",
+      "required": true,
+    },
+    "FulfillmentMethod": Object {
+      "name": "FulfillmentMethod",
+      "required": false,
+    },
+    "FulfillmentPolicy": Object {
+      "name": "FulfillmentPolicy",
+      "required": false,
+      "type": "fba.FulfillmentPolicy",
+    },
+    "LineItems": Object {
+      "construct": [Function],
+      "name": "LineItems",
+      "required": true,
+      "type": "Complex",
+    },
+    "NotificationEmailList.member": Object {
+      "list": true,
+      "name": "NotificationEmailList.member",
+      "required": false,
+    },
+    "SellerFulfillmentOrderId": Object {
+      "name": "SellerFulfillmentOrderId",
+      "required": true,
+    },
+    "ShippingSpeedCategory": Object {
+      "name": "ShippingSpeedCategory",
+      "required": true,
+      "type": "fba.ShippingSpeedCategory",
+    },
+  },
+  "paramsMap": Object {
+    "DestAddressLine1": "DestinationAddress.Line1",
+    "DestAddressLine2": "DestinationAddress.Line2",
+    "DestAddressLine3": "DestinationAddress.Line3",
+    "DestCity": "DestinationAddress.City",
+    "DestCountryCode": "DestinationAddress.CountryCode",
+    "DestDistrictOrCounty": "DestinationAddress.DistrictOrCounty",
+    "DestName": "DestinationAddress.Name",
+    "DestPhoneNumber": "DestinationAddress.PhoneNumber",
+    "DestPostalCode": "DestinationAddress.PostalCode",
+    "DestStateOrProvince": "DestinationAddress.StateOrProvinceCode",
+    "NotificationEmails": "NotificationEmailList.member",
+  },
+}
+`;
+
+exports[`Fba outbound.GetFulfillmentOrder should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetFulfillmentOrder",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "SellerFulfillmentOrderId": Object {
+      "name": "SellerFulfillmentOrderId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba outbound.GetFulfillmentPreview should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetFulfillmentPreview",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "Address.City": Object {
+      "name": "Address.City",
+    },
+    "Address.CountryCode": Object {
+      "name": "Address.CountryCode",
+    },
+    "Address.DistrictOrCounty": Object {
+      "name": "Address.DistrictOrCounty",
+    },
+    "Address.Line1": Object {
+      "name": "Address.Line1",
+    },
+    "Address.Line2": Object {
+      "name": "Address.Line2",
+    },
+    "Address.Line3": Object {
+      "name": "Address.Line3",
+    },
+    "Address.Name": Object {
+      "name": "Address.Name",
+    },
+    "Address.PhoneNumber": Object {
+      "name": "Address.PhoneNumber",
+    },
+    "Address.PostalCode": Object {
+      "name": "Address.PostalCode",
+    },
+    "Address.StateOrProvinceCode": Object {
+      "name": "Address.StateOrProvinceCode",
+    },
+    "LineItems": Object {
+      "construct": [Function],
+      "name": "LineItems",
+      "required": true,
+      "type": "Complex",
+    },
+    "ShippingSpeedCategories.member": Object {
+      "list": true,
+      "name": "ShippingSpeedCategories.member",
+      "type": "fba.ShippingSpeedCategory",
+    },
+  },
+  "paramsMap": Object {
+    "ShippingSpeeds": "ShippingSpeedCategories.member",
+    "ToAddressLine1": "Address.Line1",
+    "ToAddressLine2": "Address.Line2",
+    "ToAddressLine3": "Address.Line3",
+    "ToCity": "Address.City",
+    "ToCountry": "Address.CountryCode",
+    "ToDistrictOrCounty": "Address.DistrictOrCounty",
+    "ToName": "Address.Name",
+    "ToPhoneNumber": "Address.PhoneNumber",
+    "ToPostalCode": "Address.PostalCode",
+    "ToStateOrProvince": "Address.StateOrProvinceCode",
+  },
+}
+`;
+
+exports[`Fba outbound.GetServiceStatus should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetServiceStatus",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba outbound.ListAllFulfillmentOrders should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListAllFulfillmentOrders",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "FulfillmentMethod.member": Object {
+      "list": true,
+      "name": "FulfillmentMethod.member",
+    },
+    "QueryStartDateTime": Object {
+      "name": "QueryStartDateTime",
+      "required": true,
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "FulfillentMethods": "FulfillmentMethod.member",
+  },
+}
+`;
+
+exports[`Fba outbound.ListAllFulfillmentOrdersByNextToken should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListAllFulfillmentOrdersByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/FulfillmentOutboundShipment/2010-10-01",
+    "upload": undefined,
+    "version": "2010-10-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Fba should have expected complex types 1`] = `
+Array [
+  "InboundShipmentItems",
+  "InboundShipmentPlanRequestItems",
+  "CreateLineItems",
+  "PreviewLineItems",
+]
+`;
+
+exports[`Fba should have expected request names 1`] = `
+Array [
+  "inbound",
+  "inventory",
+  "outbound",
+]
+`;
+
+exports[`Fba should have the expected enums 1`] = `
+Array [
+  "ResponseGroups",
+  "ShippingSpeedCategories",
+  "FulfillmentPolicies",
+]
+`;
