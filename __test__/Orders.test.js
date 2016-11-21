@@ -14,6 +14,10 @@ describe('Orders', () => {
     expect(Object.keys(Orders.enums)).toMatchSnapshot();
   });
 
+  test('should have expected request names', () => {
+    expect(Object.keys(Orders.requests)).toMatchSnapshot();
+  });
+
   test('enum FulfillmentChannels should have expected values', () => {
     expect(Orders.enums.FulfillmentChannels()).toMatchSnapshot();
   });
@@ -24,11 +28,6 @@ describe('Orders', () => {
 
   test('enum PaymentMethods should have expected values', () => {
     expect(Orders.enums.PaymentMethods()).toMatchSnapshot();
-  });
-
-
-  test('should have expected request names', () => {
-    expect(Object.keys(Orders.requests)).toMatchSnapshot();
   });
 
   test('GetServiceStatus should return expected state', () => {
