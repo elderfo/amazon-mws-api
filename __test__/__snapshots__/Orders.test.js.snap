@@ -1,0 +1,253 @@
+exports[`Orders GetOrder should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetOrder",
+  "api": Object {
+    "legacy": false,
+    "path": "/Orders/2013-09-01",
+    "upload": undefined,
+    "version": "2013-09-01",
+  },
+  "params": Object {
+    "AmazonOrderId.Id": Object {
+      "list": true,
+      "name": "AmazonOrderId.Id",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "AmazonOrderId": "AmazonOrderId.Id",
+  },
+}
+`;
+
+exports[`Orders GetServiceStatus should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetServiceStatus",
+  "api": Object {
+    "legacy": false,
+    "path": "/Orders/2013-09-01",
+    "upload": undefined,
+    "version": "2013-09-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Orders ListOrderItems should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListOrderItems",
+  "api": Object {
+    "legacy": false,
+    "path": "/Orders/2013-09-01",
+    "upload": undefined,
+    "version": "2013-09-01",
+  },
+  "params": Object {
+    "AmazonOrderId": Object {
+      "name": "AmazonOrderId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Orders ListOrderItemsByNextToken should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListOrderItemsByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/Orders/2013-09-01",
+    "upload": undefined,
+    "version": "2013-09-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Orders ListOrders should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListOrders",
+  "api": Object {
+    "legacy": false,
+    "path": "/Orders/2013-09-01",
+    "upload": undefined,
+    "version": "2013-09-01",
+  },
+  "params": Object {
+    "BuyerEmail": Object {
+      "name": "BuyerEmail",
+    },
+    "CreatedAfter": Object {
+      "name": "CreatedAfter",
+      "type": "Timestamp",
+    },
+    "CreatedBefore": Object {
+      "name": "CreatedBefore",
+      "type": "Timestamp",
+    },
+    "FulfillmentChannel.Channel": Object {
+      "list": true,
+      "name": "FulfillmentChannel.Channel",
+      "type": "orders.FulfillmentChannels",
+    },
+    "LastUpdatedAfter": Object {
+      "name": "LastUpdatedAfter",
+      "type": "Timestamp",
+    },
+    "LastUpdatedBefore": Object {
+      "name": "LastUpdatedBefore",
+      "type": "Timestamp",
+    },
+    "MarketplaceId.Id": Object {
+      "list": true,
+      "name": "MarketplaceId.Id",
+      "required": true,
+    },
+    "MaxResultsPerPage": Object {
+      "name": "MaxResultsPerPage",
+    },
+    "OrderStatus.Status": Object {
+      "list": true,
+      "name": "OrderStatus.Status",
+      "type": "orders.OrderStatuses",
+    },
+    "PaymentMethod.Method": Object {
+      "list": true,
+      "name": "PaymentMethod.Method",
+      "type": "orders.PaymentMethods",
+    },
+    "SellerOrderId": Object {
+      "name": "SellerOrderId",
+    },
+  },
+  "paramsMap": Object {
+    "FulfillmentChannel": "FulfillmentChannel.Channel",
+    "MarketplaceId": "MarketplaceId.Id",
+    "OrderStatus": "OrderStatus.Status",
+    "PaymentMethod": "PaymentMethod.Method",
+  },
+}
+`;
+
+exports[`Orders ListOrdersByNextToken should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListOrdersByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/Orders/2013-09-01",
+    "upload": undefined,
+    "version": "2013-09-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Orders enum FulfillmentChannels should have expected values 1`] = `
+EnumType {
+  "AFN": false,
+  "MFN": false,
+  "_choices": Array [
+    "AFN",
+    "MFN",
+  ],
+}
+`;
+
+exports[`Orders enum OrderStatuses should have expected values 1`] = `
+EnumType {
+  "Canceled": false,
+  "PartiallyShipped": false,
+  "Pending": false,
+  "Shipped": false,
+  "Unfulfillable": false,
+  "Unshipped": false,
+  "_choices": Array [
+    "Pending",
+    "Unshipped",
+    "PartiallyShipped",
+    "Shipped",
+    "Canceled",
+    "Unfulfillable",
+  ],
+}
+`;
+
+exports[`Orders enum PaymentMethods should have expected values 1`] = `
+EnumType {
+  "COD": false,
+  "CVS": false,
+  "Other": false,
+  "_choices": Array [
+    "COD",
+    "CVS",
+    "Other",
+  ],
+}
+`;
+
+exports[`Orders should have expected request names 1`] = `
+Array [
+  "GetServiceStatus",
+  "ListOrders",
+  "ListOrdersByNextToken",
+  "GetOrder",
+  "ListOrderItems",
+  "ListOrderItemsByNextToken",
+]
+`;
+
+exports[`Orders should have expected types 1`] = `
+Object {
+  "FulfillmentChannel": Object {
+    "AFN": "Amazon Fulfillment Network",
+    "MFN": "Merchant\'s Fulfillment Network",
+  },
+  "OrderStatus": Object {
+    "Canceled": "The order was canceled.",
+    "PartiallyShipped": "One or more (but not all) items have been shipped. Implies Unshipped.",
+    "Pending": "Order placed but payment not yet authorized. Not ready for shipment.",
+    "Shipped": "All items in the order have been shipped.",
+    "Unfulfillable": "The order cannot be fulfilled. Applies only to Amazon-fulfilled orders not placed on Amazon.",
+    "Unshipped": "Payment has been authorized. Order ready for shipment, but no items shipped yet. Implies PartiallyShipped.",
+  },
+  "PaymentMethod": Object {
+    "COD": "Cash on delivery",
+    "CVS": "Convenience store payment",
+    "Other": "Any payment method other than COD or CVS",
+  },
+  "ServiceStatus": Object {
+    "GREEN": "The service is operating normally.",
+    "GREEN_I": "The service is operating normally + additional info provided",
+    "RED": "The service is unabailable or experiencing extremely high error rates.",
+    "YELLOW": "The service is experiencing higher than normal error rates or degraded performance.",
+  },
+  "ShipServiceLevelCategory": Object {
+    "Expedited": "Expedited shipping",
+    "NextDay": "Overnight shipping",
+    "SecondDay": "Second-day shipping",
+    "Standard": "Standard shipping",
+  },
+}
+`;
+
+exports[`Orders should have the expected enums 1`] = `
+Array [
+  "FulfillmentChannels",
+  "OrderStatuses",
+  "PaymentMethods",
+]
+`;
