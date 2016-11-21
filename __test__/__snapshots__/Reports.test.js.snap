@@ -1,0 +1,464 @@
+exports[`Reports CancelReportRequests should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "CancelReportRequests",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "ReportProcessingStatusList.Status": Object {
+      "list": true,
+      "name": "ReportProcessingStatusList.Status",
+      "type": "reports.ReportProcessingStatuses",
+    },
+    "ReportRequestIdList.Id": Object {
+      "list": true,
+      "name": "ReportRequestIdList.Id",
+    },
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+    "RequestedFromDate": Object {
+      "name": "RequestedFromDate",
+      "type": "Timestamp",
+    },
+    "RequestedToDate": Object {
+      "name": "RequestedToDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "ReportProcessingStatusList": "ReportProcessingStatusList.Status",
+    "ReportRequestIdList": "ReportRequestIdList.Id",
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports Enum ReportOptions should return expected values 1`] = `
+EnumType {
+  "ShowSalesChannel=true": false,
+  "_choices": Array [
+    "ShowSalesChannel=true",
+  ],
+}
+`;
+
+exports[`Reports Enum ReportProcessingStatuses should return expected values 1`] = `
+EnumType {
+  "_CANCELLED_": false,
+  "_DONE_": false,
+  "_DONE_NO_DATA_": false,
+  "_IN_PROGRESS_": false,
+  "_SUBMITTED_": false,
+  "_choices": Array [
+    "_SUBMITTED_",
+    "_IN_PROGRESS_",
+    "_CANCELLED_",
+    "_DONE_",
+    "_DONE_NO_DATA_",
+  ],
+}
+`;
+
+exports[`Reports Enum Schedules should return expected values 1`] = `
+EnumType {
+  "_12_HOURS_": false,
+  "_14_DAYS_": false,
+  "_15_DAYS_": false,
+  "_15_MINUTES_": false,
+  "_1_DAY_": false,
+  "_1_HOUR_": false,
+  "_2_DAYS_": false,
+  "_2_HOURS_": false,
+  "_30_DAYS_": false,
+  "_30_MINUTES_": false,
+  "_4_HOURS_": false,
+  "_72_HOURS_": false,
+  "_7_DAYS_": false,
+  "_8_HOURS_": false,
+  "_NEVER_": false,
+  "_choices": Array [
+    "_15_MINUTES_",
+    "_30_MINUTES_",
+    "_1_HOUR_",
+    "_2_HOURS_",
+    "_4_HOURS_",
+    "_8_HOURS_",
+    "_12_HOURS_",
+    "_72_HOURS_",
+    "_1_DAY_",
+    "_2_DAYS_",
+    "_7_DAYS_",
+    "_14_DAYS_",
+    "_15_DAYS_",
+    "_30_DAYS_",
+    "_NEVER_",
+  ],
+}
+`;
+
+exports[`Reports GetReport should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReport",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "ReportId": Object {
+      "name": "ReportId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Reports GetReportCount should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportCount",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "Acknowledged": Object {
+      "name": "Acknowledged",
+      "type": "Boolean",
+    },
+    "AvailableFromDate": Object {
+      "name": "AvailableFromDate",
+      "type": "Timestamp",
+    },
+    "AvailableToDate": Object {
+      "name": "AvailableToDate",
+      "type": "Timestamp",
+    },
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+  },
+  "paramsMap": Object {
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports GetReportList should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportList",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "Acknowledged": Object {
+      "name": "Acknowledged",
+      "type": "Boolean",
+    },
+    "AvailableFromDate": Object {
+      "name": "AvailableFromDate",
+      "type": "Timestamp",
+    },
+    "AvailableToDate": Object {
+      "name": "AvailableToDate",
+      "type": "Timestamp",
+    },
+    "MaxCount": Object {
+      "name": "MaxCount",
+    },
+    "ReportRequestIdList.Id": Object {
+      "list": true,
+      "name": "ReportRequestIdList.Id",
+    },
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+  },
+  "paramsMap": Object {
+    "ReportRequestIdList": "ReportRequestIdList.Id",
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports GetReportListByNextToken should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportListByNextToken",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Reports GetReportRequestCount should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportRequestCount",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "ReportProcessingStatusList.Status": Object {
+      "list": true,
+      "name": "ReportProcessingStatusList.Status",
+      "type": "reports.ReportProcessingStatuses",
+    },
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+    "RequestedFromDate": Object {
+      "name": "RequestedFromDate",
+      "type": "Timestamp",
+    },
+    "RequestedToDate": Object {
+      "name": "RequestedToDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "ReportProcessingStatusList": "ReportProcessingStatusList.Status",
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports GetReportRequestList should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportRequestList",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "MaxCount": Object {
+      "name": "MaxCount",
+    },
+    "ReportProcessingStatusList.Status": Object {
+      "list": true,
+      "name": "ReportProcessingStatusList.Status",
+      "type": "reports.ReportProcessingStatuses",
+    },
+    "ReportRequestIdList.Id": Object {
+      "list": true,
+      "name": "ReportRequestIdList.Id",
+    },
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+    "RequestedFromDate": Object {
+      "name": "RequestedFromDate",
+      "type": "Timestamp",
+    },
+    "RequestedToDate": Object {
+      "name": "RequestedToDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "ReportProcessingStatuses": "ReportProcessingStatusList.Status",
+    "ReportRequestIdList": "ReportRequestIdList.Id",
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports GetReportRequestListByNextToken should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportRequestListByNextToken",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Reports GetReportScheduleCount should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportScheduleCount",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+  },
+  "paramsMap": Object {
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports GetReportScheduleList should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportScheduleList",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "ReportTypeList.Type": Object {
+      "list": true,
+      "name": "ReportTypeList.Type",
+    },
+  },
+  "paramsMap": Object {
+    "ReportTypeList": "ReportTypeList.Type",
+  },
+}
+`;
+
+exports[`Reports GetReportScheduleListByNextToken should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetReportScheduleListByNextToken",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Reports ManageReportSchedule should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ManageReportSchedule",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "ReportType": Object {
+      "name": "ReportType",
+      "required": true,
+    },
+    "Schedule": Object {
+      "name": "Schedule",
+      "required": true,
+      "type": "reports.Schedules",
+    },
+    "ScheduleDate": Object {
+      "name": "ScheduleDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Reports RequestReport should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "RequestReport",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "EndDate": Object {
+      "name": "EndDate",
+      "type": "Timestamp",
+    },
+    "MarketplaceIdList.Id": Object {
+      "list": true,
+      "name": "MarketplaceIdList.Id",
+      "required": false,
+    },
+    "ReportOptions": Object {
+      "name": "ReportOptions",
+      "type": "reports.ReportOptions",
+    },
+    "ReportType": Object {
+      "name": "ReportType",
+      "required": true,
+    },
+    "StartDate": Object {
+      "name": "StartDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "MarketplaceIdList": "MarketplaceIdList.Id",
+  },
+}
+`;
+
+exports[`Reports UpdateReportAcknowledgements should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "UpdateReportAcknowledgements",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "Acknowledged": Object {
+      "name": "Acknowledged",
+      "type": "Boolean",
+    },
+    "ReportIdList.Id": Object {
+      "list": true,
+      "name": "ReportIdList.Id",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "ReportIdList": "ReportIdList.Id",
+  },
+}
+`;
