@@ -34,26 +34,31 @@ describe('Orders', () => {
   test('GetServiceStatus should return expected state', () => {
     const request = Orders.requests.GetServiceStatus();
     expect(request).toMatchSnapshot();
-  })
+  });
+
   test('ListOrders should return expected state', () => {
     const request = Orders.requests.ListOrders();
     expect(request).toMatchSnapshot();
-  })
+  });
+
   test('ListOrdersByNextToken should return expected state', () => {
     const request = Orders.requests.ListOrdersByNextToken();
     expect(request).toMatchSnapshot();
-  })
+  });
+
   test('GetOrder should return expected state', () => {
     const request = Orders.requests.GetOrder();
     expect(request).toMatchSnapshot();
-  })
+  });
+
   test('ListOrderItems should return expected state', () => {
     const request = Orders.requests.ListOrderItems();
     expect(request).toMatchSnapshot();
-  })
+  });
+
   test('ListOrderItemsByNextToken should return expected state', () => {
     const request = Orders.requests.ListOrderItemsByNextToken();
     expect(request).toMatchSnapshot();
-  })
+  });
 
 });
