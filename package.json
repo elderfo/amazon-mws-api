@@ -65,11 +65,14 @@
     "lint:watch": "npm run lint --watch",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:debug": "node --debug-brk ./node_modules/.bin/jest -i",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "scrub": "babel-node ./__test__/tools/scrubJsonFiles.js"
   },
   "bugs": {
     "url": "https://github.com/elderfo/mws-sdk/issues"
   },
-  "jest": {}
+  "jest": {
+    "collectCoverageFrom":["index.js","lib/**/*.{js,jsx}","!**/__tests__/tools/**"]
+  }
 }
