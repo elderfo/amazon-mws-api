@@ -90,7 +90,7 @@ describe('AmazonMwsRequest constructor', () => {
 describe('AmazonMwsRequest set(...)', () => {
 
   it('should throw exception when trying to set a param that doesn\'t exist', () => {
-    var req = createRequestWithParams({});
+    const req = createRequestWithParams({});
     expect(() => {
       req.set(uuid.v4(), true);
     }).toThrow();
@@ -286,6 +286,6 @@ describe('AmazonMwsRequest set(...)', () => {
 
 const createRequestWithParams = function (params) {
   // hack to fix an issue with Request's ctor mutating the params
-  var actual = JSON.parse(JSON.stringify(params));
+  const actual = JSON.parse(JSON.stringify(params));
   return new Request(Object.assign({}, {params: actual}));
 };

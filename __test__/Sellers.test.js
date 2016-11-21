@@ -1,4 +1,4 @@
-import {Sellers} from '../lib/mws'
+import {Sellers} from '../lib/mws';
 
 describe('SellersRequest', () => {
 
