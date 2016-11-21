@@ -1,0 +1,57 @@
+exports[`SellersRequest GetServiceStatus should populate properties 1`] = `
+AmazonMwsRequest {
+  "action": "GetServiceStatus",
+  "api": Object {
+    "legacy": false,
+    "path": "/Sellers/2011-07-01",
+    "upload": undefined,
+    "version": "2011-07-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`SellersRequest ListMarketplaceParticipations should populate properties 1`] = `
+AmazonMwsRequest {
+  "action": "ListMarketplaceParticipations",
+  "api": Object {
+    "legacy": false,
+    "path": "/Sellers/2011-07-01",
+    "upload": undefined,
+    "version": "2011-07-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`SellersRequest ListMarketplaceParticipationsByNextToken should populate properties 1`] = `
+AmazonMwsRequest {
+  "action": "ListMarketplaceParticipationsByNextToken",
+  "api": Object {
+    "legacy": false,
+    "path": "/Sellers/2011-07-01",
+    "upload": undefined,
+    "version": "2011-07-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`SellersRequest types should return expected values 1`] = `
+Object {
+  "ServiceStatus": Object {
+    "GREEN": "The service is operating normally.",
+    "GREEN_I": "The service is operating normally + additional info provided",
+    "RED": "The service is unabailable or experiencing extremely high error rates.",
+    "YELLOW": "The service is experiencing higher than normal error rates or degraded performance.",
+  },
+}
+`;
