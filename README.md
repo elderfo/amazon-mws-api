@@ -1,6 +1,8 @@
 mws-sdk-promises
 ======
 
+[![Build Status](https://travis-ci.org/elderfo/mws-sdk.svg?branch=master)](https://travis-ci.org/elderfo/mws-sdk)
+
 Originally forked from [ticadia/mws-sdk](https://github.com/ticadia/mws-sdk).
 
 What is done:
