@@ -1,0 +1,254 @@
+exports[`Feeds CancelFeedSubmissions should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "CancelFeedSubmissions",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "FeedSubmissionIdList.Id": Object {
+      "list": true,
+      "name": "FeedSubmissionIdList.Id",
+      "required": false,
+    },
+    "FeedTypeList.Type": Object {
+      "list": true,
+      "name": "FeedTypeList.Type",
+    },
+    "SubmittedFromDate": Object {
+      "name": "SubmittedFromDate",
+      "type": "Timestamp",
+    },
+    "SubmittedToDate": Object {
+      "name": "SubmittedToDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "FeedSubmissionIds": "FeedSubmissionIdList.Id",
+    "FeedTypes": "FeedTypeList.Type",
+    "SubmittdFrom": "SubmittedFromDate",
+    "SubmittedTo": "SubmittedToDate",
+  },
+}
+`;
+
+exports[`Feeds FeedProcessingStatuses enum should have expected values 1`] = `
+Array [
+  "_SUBMITTED_",
+  "_IN_PROGRESS_",
+  "_CANCELLED_",
+  "_DONE_",
+  "_choices",
+]
+`;
+
+exports[`Feeds FeedTypes enum should have expected values 1`] = `
+Array [
+  "_POST_PRODUCT_DATA_",
+  "_POST_PRODUCT_RELATIONSHIP_DATA_",
+  "_POST_ITEM_DATA_",
+  "_POST_PRODUCT_OVERRIDES_DATA_",
+  "_POST_PRODUCT_IMAGE_DATA_",
+  "_POST_PRODUCT_PRICING_DATA_",
+  "_POST_INVENTORY_AVAILABILITY_DATA_",
+  "_POST_ORDER_ACKNOWLEDGEMENT_DATA_",
+  "_POST_ORDER_FULFILLMENT_DATA_",
+  "_POST_FULFILLMENT_ORDER_REQUEST_DATA_",
+  "_POST_FULFILLMENT_ORDER_CANCELLATION",
+  "_POST_PAYMENT_ADJUSTMENT_DATA_",
+  "_POST_INVOICE_CONFIRMATION_DATA_",
+  "_POST_FLAT_FILE_LISTINGS_DATA_",
+  "_POST_FLAT_FILE_ORDER_ACKNOWLEDGEMENT_DATA_",
+  "_POST_FLAT_FILE_FULFILLMENT_DATA_",
+  "_POST_FLAT_FILE_FBA_CREATE_INBOUND_SHIPMENT_",
+  "_POST_FLAT_FILE_FBA_UPDATE_INBOUND_SHIPMENT_",
+  "_POST_FLAT_FILE_PAYMENT_ADJUSTMENT_DATA_",
+  "_POST_FLAT_FILE_INVOICE_CONFIRMATION_DATA_",
+  "_POST_FLAT_FILE_INVLOADER_DATA_",
+  "_POST_FLAT_FILE_CONVERGENCE_LISTINGS_DATA_",
+  "_POST_FLAT_FILE_BOOKLOADER_DATA_",
+  "_POST_FLAT_FILE_PRICEANDQUANTITYONLY",
+  "_POST_UIEE_BOOKLOADER_DATA_",
+  "_choices",
+]
+`;
+
+exports[`Feeds GetFeedSubmissionCount should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetFeedSubmissionCount",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "FeedProcessingStatusList.Status": Object {
+      "list": true,
+      "name": "FeedProcessingStatusList.Status",
+      "type": "bde.FeedProcessingStatuses",
+    },
+    "FeedTypeList.Type": Object {
+      "list": true,
+      "name": "FeedTypeList.Type",
+    },
+    "SubmittedFromDate": Object {
+      "name": "SubmittedFromDate",
+      "type": "Timestamp",
+    },
+    "SubmittedToDate": Object {
+      "name": "SubmittedToDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "FeedProcessingStatuses": "FeedProcessingStatusList.Status",
+    "FeedTypes": "FeedTypeList.Type",
+    "SubmittedFrom": "SubmittedFromDate",
+    "SubmittedTo": "SubmittedToDate",
+  },
+}
+`;
+
+exports[`Feeds GetFeedSubmissionList should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetFeedSubmissionList",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "FeedProcessingStatusList.Status": Object {
+      "list": true,
+      "name": "FeedProcessingStatusList.Status",
+      "type": "bde.FeedProcessingStatuses",
+    },
+    "FeedSubmissionIdList.Id": Object {
+      "list": true,
+      "name": "FeedSubmissionIdList.Id",
+      "required": false,
+    },
+    "FeedTypeList.Type": Object {
+      "list": true,
+      "name": "FeedTypeList.Type",
+    },
+    "MaxCount": Object {
+      "name": "MaxCount",
+    },
+    "SubmittedFromDate": Object {
+      "name": "SubmittedFromDate",
+      "type": "Timestamp",
+    },
+    "SubmittedToDate": Object {
+      "name": "SubmittedToDate",
+      "type": "Timestamp",
+    },
+  },
+  "paramsMap": Object {
+    "FeedProcessingStatuses": "FeedProcessingStatusList.Status",
+    "FeedSubmissionIds": "FeedSubmissionIdList.Id",
+    "FeedTypes": "FeedTypeList.Type",
+    "SubmittedFrom": "SubmittedFromDate",
+    "SubmittedTo": "SubmittedToDate",
+  },
+}
+`;
+
+exports[`Feeds GetFeedSubmissionListByNextToken should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetFeedSubmissionListByNextToken",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "NextToken": Object {
+      "name": "NextToken",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Feeds GetFeedSubmissionResult should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetFeedSubmissionResult",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": undefined,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "FeedSubmissionId": Object {
+      "name": "FeedSubmissionId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Feeds SubmitFeed should return the expected state 1`] = `
+AmazonMwsRequest {
+  "action": "SubmitFeed",
+  "api": Object {
+    "legacy": true,
+    "path": "/",
+    "upload": true,
+    "version": "2009-01-01",
+  },
+  "params": Object {
+    "FeedType": Object {
+      "name": "FeedType",
+      "required": true,
+    },
+    "MarketplaceIdList.Id": Object {
+      "list": true,
+      "name": "MarketplaceIdList.Id",
+      "required": false,
+    },
+    "PurgeAndReplace": Object {
+      "name": "PurgeAndReplace",
+      "required": false,
+      "type": "Boolean",
+    },
+    "_BODY_": Object {
+      "name": "_BODY_",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "FeedContents": "_BODY_",
+    "MarketplaceIds": "MarketplaceIdList.Id",
+  },
+}
+`;
+
+exports[`Feeds should have expected request names 1`] = `
+Array [
+  "CancelFeedSubmissions",
+  "GetFeedSubmissionList",
+  "GetFeedSubmissionListByNextToken",
+  "GetFeedSubmissionCount",
+  "GetFeedSubmissionResult",
+  "SubmitFeed",
+]
+`;
+
+exports[`Feeds should have expected types 1`] = `undefined`;
+
+exports[`Feeds should have the expected enums 1`] = `
+Array [
+  "FeedProcessingStatuses",
+  "FeedTypes",
+]
+`;
