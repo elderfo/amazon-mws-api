@@ -1,0 +1,12 @@
+exports[`ComplexList appendTo should perform expected work 1`] = `
+Object {
+  "newName.1.abc": "123",
+}
+`;
+
+exports[`ComplexList should initialize with expected values 1`] = `
+ComplexListType {
+  "members": Array [],
+  "pre": "newName",
+}
+`;
