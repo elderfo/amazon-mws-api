@@ -1,0 +1,335 @@
+exports[`Products GetCompetitivePricingForASIN should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetCompetitivePricingForASIN",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "ASINList.ASIN": Object {
+      "list": true,
+      "name": "ASINList.ASIN",
+      "required": true,
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "ASINList": "ASINList.ASIN",
+  },
+}
+`;
+
+exports[`Products GetCompetitivePricingForSKU should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetCompetitivePricingForSKU",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+    "SellerSKUList.SellerSKU": Object {
+      "list": true,
+      "name": "SellerSKUList.SellerSKU",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "SellerSKUList": "SellerSKUList.SellerSKU",
+  },
+}
+`;
+
+exports[`Products GetLowestOfferListingsForASIN should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetLowestOfferListingsForASIN",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "ASINList.ASIN": Object {
+      "list": true,
+      "name": "ASINList.ASIN",
+      "required": true,
+    },
+    "ItemCondition": Object {
+      "name": "ItemCondition",
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "ASINList": "ASINList.ASIN",
+  },
+}
+`;
+
+exports[`Products GetLowestOfferListingsForSKU should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetLowestOfferListingsForSKU",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "ItemCondition": Object {
+      "name": "ItemCondition",
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+    "SellerSKUList.SellerSKU": Object {
+      "list": true,
+      "name": "SellerSKUList.SellerSKU",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "SellerSKUList": "SellerSKUList.SellerSKU",
+  },
+}
+`;
+
+exports[`Products GetMatchingProduct should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetMatchingProduct",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "ASINList.ASIN": Object {
+      "list": true,
+      "name": "ASINList.ASIN",
+      "required": true,
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "ASINList": "ASINList.ASIN",
+  },
+}
+`;
+
+exports[`Products GetMatchingProductForId should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetMatchingProductForId",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "IdList.Id": Object {
+      "list": true,
+      "name": "IdList.Id",
+      "required": true,
+    },
+    "IdType": Object {
+      "name": "IdType",
+      "required": true,
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "IdList": "IdList.Id",
+  },
+}
+`;
+
+exports[`Products GetMyPriceForASIN should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetMyPriceForASIN",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "ASINList.ASIN": Object {
+      "list": true,
+      "name": "ASINList.ASIN",
+      "required": true,
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "ASINList": "ASINList.ASIN",
+  },
+}
+`;
+
+exports[`Products GetMyPriceForSKU should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetMyPriceForSKU",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+    "SellerSKUList.SellerSKU": Object {
+      "list": true,
+      "name": "SellerSKUList.SellerSKU",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {
+    "SellerSKUList": "SellerSKUList.SellerSKU",
+  },
+}
+`;
+
+exports[`Products GetProductCategoriesForASIN should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetProductCategoriesForASIN",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "ASIN": Object {
+      "name": "ASIN",
+      "required": true,
+    },
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Products GetProductCategoriesForSKU should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetProductCategoriesForSKU",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+    "SellerSKU": Object {
+      "name": "SellerSKU",
+      "required": true,
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Products GetServiceStatus should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "GetServiceStatus",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {},
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Products ListMatchingProducts should return expected state 1`] = `
+AmazonMwsRequest {
+  "action": "ListMatchingProducts",
+  "api": Object {
+    "legacy": false,
+    "path": "/Products/2011-10-01",
+    "upload": undefined,
+    "version": "2011-10-01",
+  },
+  "params": Object {
+    "MarketplaceId": Object {
+      "name": "MarketplaceId",
+      "required": true,
+    },
+    "Query": Object {
+      "name": "Query",
+      "required": true,
+    },
+    "QueryContextId": Object {
+      "name": "QueryContextId",
+    },
+  },
+  "paramsMap": Object {},
+}
+`;
+
+exports[`Products enum ItemConditions should have expected values 1`] = `
+EnumType {
+  "Club": false,
+  "Collectible": false,
+  "New": false,
+  "Refurbished": false,
+  "Used": false,
+  "_choices": Array [
+    "New",
+    "Used",
+    "Collectible",
+    "Refurbished",
+    "Club",
+  ],
+}
+`;
+
+exports[`Products types should be as expected 1`] = `
+Object {
+  "CompetitivePriceId": Object {
+    "1": "New Buy Box Price",
+    "2": "Used Buy Box Price",
+  },
+  "ServiceStatus": Object {
+    "GREEN": "The service is operating normally.",
+    "GREEN_I": "The service is operating normally + additional info provided",
+    "RED": "The service is unabailable or experiencing extremely high error rates.",
+    "YELLOW": "The service is experiencing higher than normal error rates or degraded performance.",
+  },
+}
+`;
