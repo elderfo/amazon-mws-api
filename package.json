@@ -73,6 +73,10 @@
     "url": "https://github.com/elderfo/mws-sdk/issues"
   },
   "jest": {
-    "collectCoverageFrom":["index.js","lib/**/*.{js,jsx}","!**/__tests__/tools/**"]
+    "collectCoverageFrom": [
+      "index.js",
+      "lib/**/*.{js,jsx}",
+      "!**/__tests__/tools/**"
+    ]
   }
 }
