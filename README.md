@@ -1,7 +1,7 @@
 amazon-msw-api
 ======
 
-[![Build Status](https://travis-ci.org/elderfo/mws-sdk.svg?branch=master)](https://travis-ci.org/elderfo/mws-sdk)
+[![Build Status](https://travis-ci.org/elderfo/amazon-mws-api.svg?branch=master)](https://travis-ci.org/elderfo/amazon-mws-api)
 
 Originally forked from [ticadia/mws-sdk](https://github.com/ticadia/mws-sdk).
 
