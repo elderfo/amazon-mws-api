@@ -76,7 +76,7 @@
     "test:debug": "node --debug-brk ./node_modules/.bin/jest -i",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "scrub": "babel-node ./__test__/tools/scrubJsonFiles.js",
-    "build": "webpack",
+    "build": "webpack"
   },
   "bugs": {
     "url": "https://github.com/elderfo/mws-sdk/issues"
