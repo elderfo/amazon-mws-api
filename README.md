@@ -1,4 +1,4 @@
-mws-sdk-promises
+amazon-msw-api
 ======
 
 [![Build Status](https://travis-ci.org/elderfo/mws-sdk.svg?branch=master)](https://travis-ci.org/elderfo/mws-sdk)
@@ -28,7 +28,7 @@ Examples
 Initialize
 
 ```javascript
-var MWS = require('elderfo-mws-sdk-promises');
+var MWS = require('amazon-msw-api');
 var client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {});
 var marketplaceId = "ATVPDKIKX0DER";
 ```
