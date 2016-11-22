@@ -1,4 +1,4 @@
-amazon-msw-api
+amazon-mws-api
 ======
 
 [![Build Status](https://travis-ci.org/elderfo/amazon-mws-api.svg?branch=master)](https://travis-ci.org/elderfo/amazon-mws-api)
@@ -28,7 +28,7 @@ Examples
 Initialize
 
 ```javascript
-var MWS = require('amazon-msw-api');
+var MWS = require('amazon-mws-api');
 var client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {});
 var marketplaceId = "ATVPDKIKX0DER";
 ```
