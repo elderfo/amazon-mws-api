@@ -12,9 +12,9 @@ What is done:
 
  - Promises to provide generic async support.
  
- - I've add some new requests from updated Amazone API.
+ - I've add some new requests from updated Amazon API.
  
- - I fix it with better set params ability... so it now looks niceier!!!
+ - I fix it with better set params ability... so it now looks nicer!!!
 
 
 Use it. Contribute to it.
@@ -83,13 +83,4 @@ getListOrders(client, {
 Tests
 -----
 
-1. Create a file `.env` in the root directory and add and fill out the following:
-
-  ```
-  MerchantId=
-  AccessKey=
-  MarketPlaceId=
-  SecretKey=
-  ```
-  
-2. Run `npm test` or `yarn run test` to execute tests. (Note: you can turn on a test watcher by running `start run test:watch` or `yarn run test:watch`)
+1. Run `npm test` or `yarn run test` to execute tests. _Note: you can turn on a test watcher by running `start run test:watch` or `yarn run test:watch`_
