@@ -1,7 +1,9 @@
 amazon-mws-api
 ======
 
-[![Build Status](https://travis-ci.org/elderfo/amazon-mws-api.svg?branch=master)](https://travis-ci.org/elderfo/amazon-mws-api) [![Known Vulnerabilities](https://snyk.io/test/github/elderfo/amazon-mws-api/a7e28e3efc6c868a4e721d270b063ea8cf79687c/badge.svg)](https://snyk.io/test/github/elderfo/amazon-mws-api/a7e28e3efc6c868a4e721d270b063ea8cf79687c)
+[![Build Status](https://travis-ci.org/elderfo/amazon-mws-api.svg?branch=master)](https://travis-ci.org/elderfo/amazon-mws-api)
+[![Coverage Status](https://coveralls.io/repos/github/elderfo/amazon-mws-api/badge.svg?branch=master)](https://coveralls.io/github/elderfo/amazon-mws-api?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/elderfo/amazon-mws-api/a7e28e3efc6c868a4e721d270b063ea8cf79687c/badge.svg)](https://snyk.io/test/github/elderfo/amazon-mws-api/a7e28e3efc6c868a4e721d270b063ea8cf79687c)
 
 Originally forked from [ticadia/mws-sdk](https://github.com/ticadia/mws-sdk).
 

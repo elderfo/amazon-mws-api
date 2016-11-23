@@ -2,7 +2,7 @@
 dist/
 yarn-error.log
 .DS_Store
-
+.coveralls.yml
 
 # Created by https://www.gitignore.io/api/jetbrains,node,visualstudiocode
 
@@ -55,7 +55,7 @@ fabric.properties
 
 # *.iml
 # modules.xml
-# .idea/misc.xml 
+# .idea/misc.xml
 # *.ipr
 
 
