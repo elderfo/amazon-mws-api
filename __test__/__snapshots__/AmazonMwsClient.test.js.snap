@@ -1,0 +1,33 @@
+exports[`AmazonMwsClient Constructor should populate expected properties 1`] = `
+AmazonMwsClient {
+  "accessKeyId": "accessKeyId",
+  "appLanguage": "JavaScript",
+  "appName": "mws-js",
+  "appVersion": "0.1.0",
+  "authToken": undefined,
+  "creds": SecureContext {
+    "context": SecureContext {},
+  },
+  "explicitArray": true,
+  "host": "mws.amazonservices.com",
+  "merchantId": "merchantId",
+  "secretAccessKey": "secretAccessKey",
+}
+`;
+
+exports[`AmazonMwsClient Constructor with no options should populate expected properties 1`] = `
+AmazonMwsClient {
+  "accessKeyId": "accessKeyId",
+  "appLanguage": "JavaScript",
+  "appName": "mws-js",
+  "appVersion": "0.1.0",
+  "authToken": undefined,
+  "creds": SecureContext {
+    "context": SecureContext {},
+  },
+  "explicitArray": true,
+  "host": "mws.amazonservices.com",
+  "merchantId": "merchantId",
+  "secretAccessKey": "secretAccessKey",
+}
+`;
