@@ -333,7 +333,5 @@ describe('AmazonMwsRequest set(...)', () => {
 });
 
 const createRequestWithParams = function (params) {
-  // hack to fix an issue with Request's ctor mutating the params
-  const actual = JSON.parse(JSON.stringify(params));
-  return new Request(Object.assign({}, { params: actual }));
+  return new Request({params});
 };
