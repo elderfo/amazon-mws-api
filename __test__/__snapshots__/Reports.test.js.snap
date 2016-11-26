@@ -1,5 +1,5 @@
 exports[`Reports CancelReportRequests should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "CancelReportRequests",
   "api": Object {
     "legacy": true,
@@ -102,7 +102,7 @@ EnumType {
 `;
 
 exports[`Reports GetReport should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReport",
   "api": Object {
     "legacy": true,
@@ -121,7 +121,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportCount should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportCount",
   "api": Object {
     "legacy": true,
@@ -154,7 +154,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportList should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportList",
   "api": Object {
     "legacy": true,
@@ -195,7 +195,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportListByNextToken should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportListByNextToken",
   "api": Object {
     "legacy": true,
@@ -214,7 +214,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportRequestCount should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportRequestCount",
   "api": Object {
     "legacy": true,
@@ -249,7 +249,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportRequestList should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportRequestList",
   "api": Object {
     "legacy": true,
@@ -292,7 +292,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportRequestListByNextToken should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportRequestListByNextToken",
   "api": Object {
     "legacy": true,
@@ -311,7 +311,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportScheduleCount should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportScheduleCount",
   "api": Object {
     "legacy": true,
@@ -332,7 +332,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportScheduleList should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportScheduleList",
   "api": Object {
     "legacy": true,
@@ -353,7 +353,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports GetReportScheduleListByNextToken should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "GetReportScheduleListByNextToken",
   "api": Object {
     "legacy": true,
@@ -372,7 +372,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports ManageReportSchedule should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "ManageReportSchedule",
   "api": Object {
     "legacy": true,
@@ -400,7 +400,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports RequestReport should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "RequestReport",
   "api": Object {
     "legacy": true,
@@ -438,7 +438,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Reports UpdateReportAcknowledgements should return expected state 1`] = `
-AmazonMwsRequest {
+ReportsRequest {
   "action": "UpdateReportAcknowledgements",
   "api": Object {
     "legacy": true,
