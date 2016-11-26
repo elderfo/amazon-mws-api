@@ -66,7 +66,7 @@ describe('AmazonMwsClient', () => {
 
   });
 
-  test('#call when not performing upload should contain expected properties', () => {
+  test('#call when performing upload should contain expected properties', () => {
     const body = uuid.v4();
     const requestConfig = getClientRequestOptions();
     requestConfig.api.upload = true;
