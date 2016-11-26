@@ -1,4 +1,4 @@
-import {Enum} from '../lib/mws';
+import Enum from '../lib/EnumType';
 
 describe('Enum', () => {
   it('should not be null', () => {
