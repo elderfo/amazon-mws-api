@@ -1,5 +1,5 @@
 exports[`Products GetCompetitivePricingForASIN should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetCompetitivePricingForASIN",
   "api": Object {
     "legacy": false,
@@ -25,7 +25,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetCompetitivePricingForSKU should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetCompetitivePricingForSKU",
   "api": Object {
     "legacy": false,
@@ -51,7 +51,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetLowestOfferListingsForASIN should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetLowestOfferListingsForASIN",
   "api": Object {
     "legacy": false,
@@ -80,7 +80,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetLowestOfferListingsForSKU should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetLowestOfferListingsForSKU",
   "api": Object {
     "legacy": false,
@@ -109,7 +109,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetMatchingProduct should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetMatchingProduct",
   "api": Object {
     "legacy": false,
@@ -135,7 +135,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetMatchingProductForId should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetMatchingProductForId",
   "api": Object {
     "legacy": false,
@@ -165,7 +165,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetMyPriceForASIN should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetMyPriceForASIN",
   "api": Object {
     "legacy": false,
@@ -191,7 +191,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetMyPriceForSKU should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetMyPriceForSKU",
   "api": Object {
     "legacy": false,
@@ -217,7 +217,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetProductCategoriesForASIN should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetProductCategoriesForASIN",
   "api": Object {
     "legacy": false,
@@ -240,7 +240,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetProductCategoriesForSKU should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetProductCategoriesForSKU",
   "api": Object {
     "legacy": false,
@@ -263,7 +263,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products GetServiceStatus should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "GetServiceStatus",
   "api": Object {
     "legacy": false,
@@ -277,7 +277,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Products ListMatchingProducts should return expected state 1`] = `
-AmazonMwsRequest {
+ProductsRequest {
   "action": "ListMatchingProducts",
   "api": Object {
     "legacy": false,
