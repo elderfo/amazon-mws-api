@@ -1,23 +1,23 @@
-import {ComplexList} from '../lib/mws';
+import ComplexListType from '../lib/ComplexListType';
 
 describe('ComplexList', ()=> {
 
   test('should not be null', ()=> {
-    expect(ComplexList).toBeDefined();
+    expect(ComplexListType).toBeDefined();
   });
 
   test('should initialize with expected values', ()=> {
-    const complexList = new ComplexList('newName');
-    expect(complexList).toMatchSnapshot();
+    const complexListType = new ComplexListType('newName');
+    expect(complexListType).toMatchSnapshot();
   });
 
   test('appendTo should perform expected work', ()=>{
-    const complexList = new ComplexList('newName');
+    const complexListType = new ComplexListType('newName');
 
-    complexList.members.push({abc:'123'});
+    complexListType.members.push({abc:'123'});
 
     let query = {};
-    const actual = complexList.appendTo(query);
+    const actual = complexListType.appendTo(query);
 
     expect(actual).toMatchSnapshot();
 
