@@ -1,11 +1,11 @@
 exports[`AmazonMwsRequest constructor should create expected paramMap 1`] = `
 AmazonMwsRequest {
-  "action": "action2",
+  "action": "action",
   "api": Object {
     "legacy": false,
-    "path": "path2",
+    "path": "path",
     "upload": false,
-    "version": "version2",
+    "version": "version",
   },
   "params": Object {
     "A1": Object {

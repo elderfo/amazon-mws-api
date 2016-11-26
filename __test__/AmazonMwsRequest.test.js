@@ -1,21 +1,16 @@
 import { ComplexList } from '../lib/mws';
 import Request from '../lib/AmazonMwsRequest';
-import autofixture from './tools/autofixture';
 import uuid from 'uuid';
 
-const optionsFactoryName = 'requestOptions';
-
-autofixture.define('requestOptions', [
-  'path',
-  'version',
-  'legacy'.asBoolean(),
-  'action',
-  'upload'.asBoolean()
-]);
-
-
 const createOptions = (params = {}) => {
-  const expectedOptions = autofixture.create(optionsFactoryName);
+  const expectedOptions = {
+    path: 'path',
+    version: 'version',
+    legacy: false,
+    action: 'action',
+    upload: false
+  };
+
   expectedOptions.params = params;
   expectedOptions.paramsMap = {};
   return expectedOptions;
