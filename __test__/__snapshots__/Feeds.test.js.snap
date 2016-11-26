@@ -1,5 +1,5 @@
 exports[`Feeds CancelFeedSubmissions should return the expected state 1`] = `
-AmazonMwsRequest {
+FeedsRequest {
   "action": "CancelFeedSubmissions",
   "api": Object {
     "legacy": true,
@@ -77,7 +77,7 @@ Array [
 `;
 
 exports[`Feeds GetFeedSubmissionCount should return the expected state 1`] = `
-AmazonMwsRequest {
+FeedsRequest {
   "action": "GetFeedSubmissionCount",
   "api": Object {
     "legacy": true,
@@ -114,7 +114,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Feeds GetFeedSubmissionList should return the expected state 1`] = `
-AmazonMwsRequest {
+FeedsRequest {
   "action": "GetFeedSubmissionList",
   "api": Object {
     "legacy": true,
@@ -160,7 +160,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Feeds GetFeedSubmissionListByNextToken should return the expected state 1`] = `
-AmazonMwsRequest {
+FeedsRequest {
   "action": "GetFeedSubmissionListByNextToken",
   "api": Object {
     "legacy": true,
@@ -179,7 +179,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Feeds GetFeedSubmissionResult should return the expected state 1`] = `
-AmazonMwsRequest {
+FeedsRequest {
   "action": "GetFeedSubmissionResult",
   "api": Object {
     "legacy": true,
@@ -198,7 +198,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Feeds SubmitFeed should return the expected state 1`] = `
-AmazonMwsRequest {
+FeedsRequest {
   "action": "SubmitFeed",
   "api": Object {
     "legacy": true,
