@@ -186,7 +186,7 @@ EnumType {
 `;
 
 exports[`Fba inbound.CreateInboundShipment should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "CreateInboundShipment",
   "api": Object {
     "legacy": false,
@@ -281,7 +281,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.CreateInboundShipmentPlan should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "CreateInboundShipmentPlan",
   "api": Object {
     "legacy": false,
@@ -339,7 +339,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.GetServiceStatus should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "GetServiceStatus",
   "api": Object {
     "legacy": false,
@@ -353,7 +353,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.ListInboundShipmentItems should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListInboundShipmentItems",
   "api": Object {
     "legacy": false,
@@ -380,7 +380,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.ListInboundShipmentItemsByNextToken should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListInboundShipmentItemsByNextToken",
   "api": Object {
     "legacy": false,
@@ -399,7 +399,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.ListInboundShipments should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListInboundShipments",
   "api": Object {
     "legacy": false,
@@ -435,7 +435,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.ListInboundShipmentsByNextToken should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListInboundShipmentsByNextToken",
   "api": Object {
     "legacy": false,
@@ -454,7 +454,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inbound.UpdateInboundShipment should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "UpdateInboundShipment",
   "api": Object {
     "legacy": false,
@@ -538,7 +538,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inventory.GetServiceStatus should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "GetServiceStatus",
   "api": Object {
     "legacy": false,
@@ -552,7 +552,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inventory.ListInventorySupply should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListInventorySupply",
   "api": Object {
     "legacy": false,
@@ -580,7 +580,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba inventory.ListInventorySupplyByNextToken should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListInventorySupplyByNextToken",
   "api": Object {
     "legacy": false,
@@ -599,7 +599,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.CancelFulfillmentOrder should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "CancelFulfillmentOrder",
   "api": Object {
     "legacy": false,
@@ -618,7 +618,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.CreateFulfillmentOrder should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "CreateFulfillmentOrder",
   "api": Object {
     "legacy": false,
@@ -715,7 +715,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.GetFulfillmentOrder should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "GetFulfillmentOrder",
   "api": Object {
     "legacy": false,
@@ -734,7 +734,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.GetFulfillmentPreview should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "GetFulfillmentPreview",
   "api": Object {
     "legacy": false,
@@ -802,7 +802,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.GetServiceStatus should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "GetServiceStatus",
   "api": Object {
     "legacy": false,
@@ -816,7 +816,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.ListAllFulfillmentOrders should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListAllFulfillmentOrders",
   "api": Object {
     "legacy": false,
@@ -842,7 +842,7 @@ AmazonMwsRequest {
 `;
 
 exports[`Fba outbound.ListAllFulfillmentOrdersByNextToken should return the expected state 1`] = `
-AmazonMwsRequest {
+FulfillmentRequest {
   "action": "ListAllFulfillmentOrdersByNextToken",
   "api": Object {
     "legacy": false,
