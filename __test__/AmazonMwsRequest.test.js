@@ -1,4 +1,5 @@
-import {Request, ComplexList} from '../lib/mws';
+import {ComplexList} from '../lib/mws';
+import Request from '../lib/AmazonMwsRequest';
 import autofixture from './tools/autofixture';
 import uuid from 'uuid';
 
@@ -39,7 +40,7 @@ describe('AmazonMwsRequest constructor', () => {
     assertOptionsMatch(req, expectedOptions);
   });
 
-  it('with expected values should properly assing', () => {
+  it('with expected values should properly assign', () => {
     const expectedOptions = createOptions();
 
     const req = new Request(expectedOptions);
