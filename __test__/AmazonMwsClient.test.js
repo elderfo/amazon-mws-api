@@ -1,7 +1,7 @@
 jest.mock('request', () => {
   return jest.fn();
 });
-import { Client } from '../lib/mws';
+import Client from '../lib/AmazonMwsClient';
 import uuid from 'uuid';
 import request from 'request';
 
