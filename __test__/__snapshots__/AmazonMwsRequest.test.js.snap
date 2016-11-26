@@ -1,3 +1,27 @@
+exports[`AmazonMwsRequest constructor should create expected paramMap 1`] = `
+AmazonMwsRequest {
+  "action": "action2",
+  "api": Object {
+    "legacy": false,
+    "path": "path2",
+    "upload": false,
+    "version": "version2",
+  },
+  "params": Object {
+    "A1": Object {
+      "name": "A1",
+    },
+    "B1": Object {
+      "name": "B1",
+    },
+  },
+  "paramsMap": Object {
+    "a1": "A1",
+    "b1": "B1",
+  },
+}
+`;
+
 exports[`AmazonMwsRequest set(...) #query with complex list should return expected 1`] = `
 Object {
   "mom.1.abc": "123",

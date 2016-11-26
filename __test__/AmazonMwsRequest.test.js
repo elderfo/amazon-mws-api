@@ -61,8 +61,7 @@ describe('AmazonMwsRequest constructor', () => {
 
     const req = new Request(expectedOptions);
 
-    assertOptionsMatch(req, expectedOptions);
-
+    expect(req).toMatchSnapshot();
 
   });
 
