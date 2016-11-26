@@ -1,5 +1,5 @@
 exports[`SellersRequest GetServiceStatus should populate properties 1`] = `
-AmazonMwsRequest {
+SellersRequest {
   "action": "GetServiceStatus",
   "api": Object {
     "legacy": false,
@@ -13,7 +13,7 @@ AmazonMwsRequest {
 `;
 
 exports[`SellersRequest ListMarketplaceParticipations should populate properties 1`] = `
-AmazonMwsRequest {
+SellersRequest {
   "action": "ListMarketplaceParticipations",
   "api": Object {
     "legacy": false,
@@ -27,7 +27,7 @@ AmazonMwsRequest {
 `;
 
 exports[`SellersRequest ListMarketplaceParticipationsByNextToken should populate properties 1`] = `
-AmazonMwsRequest {
+SellersRequest {
   "action": "ListMarketplaceParticipationsByNextToken",
   "api": Object {
     "legacy": false,
