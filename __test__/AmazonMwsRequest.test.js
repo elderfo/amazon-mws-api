@@ -1,4 +1,4 @@
-import {ComplexList} from '../lib/mws';
+import { ComplexList } from '../lib/mws';
 import Request from '../lib/AmazonMwsRequest';
 import autofixture from './tools/autofixture';
 import uuid from 'uuid';
@@ -49,7 +49,7 @@ describe('AmazonMwsRequest constructor', () => {
   });
 
   it('should create expected paramMap', () => {
-    let knownParams = {a1: {name: 'A1'}, b1: {name: 'B1'}};
+    let knownParams = { a1: { name: 'A1' }, b1: { name: 'B1' } };
     let expectedOptions = createOptions(knownParams);
 
     const paramsMap = {};
@@ -90,7 +90,7 @@ describe('AmazonMwsRequest set(...)', () => {
   it('#set should populate simple params', () => {
     const propName = uuid.v4();
     const params = {
-      prop1: {name: propName}
+      prop1: { name: propName }
     };
 
     const req = createRequestWithParams(params);
@@ -103,7 +103,7 @@ describe('AmazonMwsRequest set(...)', () => {
   it('#set should populate a param with type Boolean false as true', () => {
     const propName = uuid.v4();
     const params = {
-      prop1: {name: propName, type: 'Boolean'}
+      prop1: { name: propName, type: 'Boolean' }
     };
 
     const req = createRequestWithParams(params);
@@ -115,7 +115,7 @@ describe('AmazonMwsRequest set(...)', () => {
   it('#set should populate a param with type Boolean false as false', () => {
     const propName = uuid.v4();
     const params = {
-      prop1: {name: propName, type: 'Boolean'}
+      prop1: { name: propName, type: 'Boolean' }
     };
 
     const req = createRequestWithParams(params);
@@ -127,7 +127,7 @@ describe('AmazonMwsRequest set(...)', () => {
   it('#set should populate a param with type Timestamp as a date', () => {
     const propName = uuid.v4();
     const params = {
-      prop1: {name: propName, type: 'Timestamp'}
+      prop1: { name: propName, type: 'Timestamp' }
     };
 
     const req = createRequestWithParams(params);
@@ -140,7 +140,7 @@ describe('AmazonMwsRequest set(...)', () => {
   it('#set should throw an exception when type Timestamp specified and a non-date is specified', () => {
     const propName = uuid.v4();
     const params = {
-      prop1: {name: propName, type: 'Timestamp'}
+      prop1: { name: propName, type: 'Timestamp' }
     };
 
     const req = createRequestWithParams(params);
@@ -152,8 +152,8 @@ describe('AmazonMwsRequest set(...)', () => {
 
   it('#set should setMultiple when object passed as param and null as value', () => {
     const params = {
-      prop1: {name: 'Prop1'},
-      prop2: {name: 'Prop2'}
+      prop1: { name: 'Prop1' },
+      prop2: { name: 'Prop2' }
     };
 
     const paramValues = {
@@ -171,8 +171,8 @@ describe('AmazonMwsRequest set(...)', () => {
 
   it('#set should setMultiple when object passed as param and undefined as value', () => {
     const params = {
-      prop1: {name: 'Prop1'},
-      prop2: {name: 'Prop2'}
+      prop1: { name: 'Prop1' },
+      prop2: { name: 'Prop2' }
     };
 
     const paramValues = {
@@ -190,31 +190,31 @@ describe('AmazonMwsRequest set(...)', () => {
 
   it('#set should set list to expect value when passing a string', () => {
     const params = {
-      prop1: {name: 'Prop1', list: true}
+      prop1: { name: 'Prop1', list: true }
     };
     const value = uuid.v4();
     const req = createRequestWithParams(params);
 
     req.set(params.prop1.name, value);
 
-    expect(req.params[params.prop1.name].value).toEqual({[`${params.prop1.name}.1`]: value});
+    expect(req.params[params.prop1.name].value).toEqual({ [`${params.prop1.name}.1`]: value });
   });
 
   it('#set should set list to expect value when passing a number', () => {
     const params = {
-      prop1: {name: 'Prop1', list: true}
+      prop1: { name: 'Prop1', list: true }
     };
     const value = Math.random();
     const req = createRequestWithParams(params);
 
     req.set(params.prop1.name, value);
 
-    expect(req.params[params.prop1.name].value).toEqual({[`${params.prop1.name}.1`]: value});
+    expect(req.params[params.prop1.name].value).toEqual({ [`${params.prop1.name}.1`]: value });
   });
 
   it('#set should set list to expected values when passing an array', () => {
     const params = {
-      prop1: {name: 'Prop1', list: true}
+      prop1: { name: 'Prop1', list: true }
     };
     const value = [uuid.v4(), uuid.v4()];
     const req = createRequestWithParams(params);
@@ -229,9 +229,9 @@ describe('AmazonMwsRequest set(...)', () => {
 
   it('#set should set list to expected values when passing an object', () => {
     const params = {
-      prop1: {name: 'Prop1', list: true}
+      prop1: { name: 'Prop1', list: true }
     };
-    const value = {a1: uuid.v4(), a2: uuid.v4()};
+    const value = { a1: uuid.v4(), a2: uuid.v4() };
     const req = createRequestWithParams(params);
 
     req.set(params.prop1.name, value);
@@ -244,9 +244,9 @@ describe('AmazonMwsRequest set(...)', () => {
 
   it('#set should set list to expected values when passing an object with a boolean', () => {
     const params = {
-      prop1: {name: 'Prop1', list: true, type: 'Boolean'}
+      prop1: { name: 'Prop1', list: true, type: 'Boolean' }
     };
-    const value = {a1: true, a2: false};
+    const value = { a1: true, a2: false };
     const req = createRequestWithParams(params);
 
     req.set(params.prop1.name, value);
@@ -260,9 +260,9 @@ describe('AmazonMwsRequest set(...)', () => {
 
   it('#set should set list to expected values when passing an object with a date', () => {
     const params = {
-      prop1: {name: 'Prop1', list: true, type: 'Timestamp'}
+      prop1: { name: 'Prop1', list: true, type: 'Timestamp' }
     };
-    const value = {a1: new Date(2015, 0, 1), a2: new Date()};
+    const value = { a1: new Date(2015, 0, 1), a2: new Date() };
     const req = createRequestWithParams(params);
 
     req.set(params.prop1.name, value);
@@ -275,7 +275,7 @@ describe('AmazonMwsRequest set(...)', () => {
 
 
   it('#query without extra properties should return expected', () => {
-    const params = {prop1: {name: 'ropName1'}};
+    const params = { prop1: { name: 'ropName1' } };
     const req = createRequestWithParams(params);
     req.set(params.prop1.name, 'abc123');
     return req.query().then(result => {
@@ -283,8 +283,8 @@ describe('AmazonMwsRequest set(...)', () => {
     });
   });
 
-  it.skip('#query with required flag and value is null should throw', () => {
-    const params = {prop1: {name: 'ropName1', required: true}};
+  it('#query with required flag and value is null should throw', () => {
+    const params = { prop1: { name: 'ropName1', required: true } };
     const req = createRequestWithParams(params);
     req.set(params.prop1.name, null);
     return req.query()
@@ -292,14 +292,12 @@ describe('AmazonMwsRequest set(...)', () => {
         throw new Error;
       })
       .catch(err => {
-        expect(err).toEqual({
-          error: `ERROR: Missing required parameter(s): ${params.prop1.name}!`
-        });
+        expect(err.message).toEqual(`ERROR: Missing required parameter(s): ${params.prop1.name}!`);
       });
   });
 
-  it.skip('#query with required flag and value is undefined should throw', () => {
-    const params = {prop1: {name: 'ropName1', required: true}};
+  it('#query with required flag and value is undefined should throw', () => {
+    const params = { prop1: { name: 'ropName1', required: true } };
     const req = createRequestWithParams(params);
     req.set(params.prop1.name, undefined);
 
@@ -309,16 +307,14 @@ describe('AmazonMwsRequest set(...)', () => {
         throw new Error;
       })
       .catch(err => {
-        expect(err).toEqual({
-          error: `ERROR: Missing required parameter(s): ${params.prop1.name}!`
-        });
+        expect(err.message).toEqual(`ERROR: Missing required parameter(s): ${params.prop1.name}!`);
       });
   });
 
   it('#query with complex list should return expected', () => {
-    const params = {prop1: {name: 'ropName1', type: 'Complex'}};
+    const params = { prop1: { name: 'ropName1', type: 'Complex' } };
     let complexList = new ComplexList('mom');
-    complexList.members.push({abc: '123'});
+    complexList.members.push({ abc: '123' });
 
     const req = createRequestWithParams(params);
 
@@ -330,7 +326,7 @@ describe('AmazonMwsRequest set(...)', () => {
   });
 
   it('#query with list should return expected', () => {
-    const params = {prop1: {name: 'ropName1', list: true}};
+    const params = { prop1: { name: 'ropName1', list: true } };
 
     const req = createRequestWithParams(params);
 
@@ -345,5 +341,5 @@ describe('AmazonMwsRequest set(...)', () => {
 const createRequestWithParams = function (params) {
   // hack to fix an issue with Request's ctor mutating the params
   const actual = JSON.parse(JSON.stringify(params));
-  return new Request(Object.assign({}, {params: actual}));
+  return new Request(Object.assign({}, { params: actual }));
 };

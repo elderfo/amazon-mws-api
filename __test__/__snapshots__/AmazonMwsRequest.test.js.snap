@@ -11,10 +11,6 @@ Object {
 }
 `;
 
-exports[`AmazonMwsRequest set(...) #query with required flag and value is null should throw 1`] = `Object {}`;
-
-exports[`AmazonMwsRequest set(...) #query with required flag and value is undefined should throw 1`] = `Object {}`;
-
 exports[`AmazonMwsRequest set(...) #query without extra properties should return expected 1`] = `
 Object {
   "ropName1": "abc123",
