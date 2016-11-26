@@ -128,6 +128,24 @@ describe('AmazonMwsClient', () => {
     expect(parameters.Merchant).toBe(requestConfig.merchantId);
   });
 
+  test('#invoke should perform expected work', ()=> {
+    const query = {testParam: uuid.v4()};
+    const request = {
+      query: jest.fn(()=> Promise.resolve(query)),
+      api: uuid.v4(),
+      action: uuid.v4()
+    };
+
+    const client = new Client(uuid.v4(), uuid.v4(), uuid.v4());
+    client.call = jest.fn((api, action, _query)=>{
+      expect(api).toBe(request.api);
+      expect(action).toBe(request.action);
+      expect(_query).toBe(query);
+    });
+
+    return client.invoke(request);
+  });
+
   const getClientRequestOptions = () => {
     return {
       accessKey : uuid.v4(),
