@@ -11,7 +11,8 @@ module.exports = {
   target: 'node',
   output: {
     path: __dirname + '/dist/', // Note: Physical files are only output by the production build task `npm run build`.
-    filename: 'prod.js'
+    filename: 'prod.js',
+    libraryTarget: 'commonjs2'
   },
   plugins: [
     new webpack.DefinePlugin(GLOBALS),
