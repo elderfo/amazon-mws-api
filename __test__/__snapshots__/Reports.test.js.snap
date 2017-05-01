@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Reports CancelReportRequests should return expected state 1`] = `
 ReportsRequest {
   "action": "CancelReportRequests",

@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Feeds CancelFeedSubmissions should return the expected state 1`] = `
 FeedsRequest {
   "action": "CancelFeedSubmissions",

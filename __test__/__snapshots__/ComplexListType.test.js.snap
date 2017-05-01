@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`ComplexList appendTo should perform expected work 1`] = `
 Object {
   "newName.1.abc": "123",

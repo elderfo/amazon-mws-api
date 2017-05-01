@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`AmazonMwsRequest constructor should create expected paramMap 1`] = `
 AmazonMwsRequest {
   "action": "action",

@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Orders GetOrder should return expected state 1`] = `
 OrdersRequest {
   "action": "GetOrder",
@@ -214,7 +216,7 @@ exports[`Orders should have expected types 1`] = `
 Object {
   "FulfillmentChannel": Object {
     "AFN": "Amazon Fulfillment Network",
-    "MFN": "Merchant\'s Fulfillment Network",
+    "MFN": "Merchant's Fulfillment Network",
   },
   "OrderStatus": Object {
     "Canceled": "The order was canceled.",

@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Fba CreateLineItems#add should be able to chain 1`] = `
 ComplexListType {
   "add": [Function],

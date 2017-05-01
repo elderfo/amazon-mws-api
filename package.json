@@ -32,7 +32,7 @@
       "email": "cgetsfred@gmail.com"
     }
   ],
-  "main": "./lib/mws",
+  "main": "./dist/prod.js",
   "directories": {
     "lib": "./lib"
   },
@@ -48,24 +48,22 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
-    "babel-jest": "^17.0.2",
-    "babel-loader": "^6.2.8",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.18.0",
     "colors": "^1.1.2",
     "coveralls": "^2.11.15",
-    "css-loader": "^0.26.0",
     "dotenv": "^2.0.0",
     "eslint": "^3.10.2",
+    "eslint-config-elderfo": "^1.1.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-watch": "^2.1.14",
-    "file-loader": "^0.9.0",
-    "jest-cli": "^17.0.3",
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
     "json-loader": "^0.5.4",
     "semantic-release": "^6.3.2",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
     "uuid": "^3.0.0",
-    "webpack": "^1.13.3"
+    "webpack": "^2.4.1"
   },
   "scripts": {
     "lint": "esw index.js lib __test__",

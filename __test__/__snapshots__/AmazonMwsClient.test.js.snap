@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`AmazonMwsClient Constructor should populate expected properties 1`] = `
 AmazonMwsClient {
   "accessKeyId": "accessKeyId",
