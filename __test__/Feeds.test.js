@@ -1,7 +1,6 @@
-import {Feeds} from '../lib/mws';
+import { Feeds } from '../lib/mws';
 
 describe('Feeds', () => {
-
   test('should not be null', () => {
     expect(Feeds).toBeDefined();
   });
@@ -55,5 +54,4 @@ describe('Feeds', () => {
     const request = Feeds.requests.SubmitFeed();
     expect(request).toMatchSnapshot();
   });
-
 });

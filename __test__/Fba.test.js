@@ -1,7 +1,6 @@
-import {Fbs} from '../lib/mws';
+import { Fbs } from '../lib/mws';
 
 describe('Fba', () => {
-
   test('should not be null', () => {
     expect(Fbs).toBeDefined();
   });
@@ -31,35 +30,35 @@ describe('Fba', () => {
   });
 
   test('InboundShipmentItems#add should perform expected work', () => {
-    let complexType = Fbs.complex.InboundShipmentItems();
+    const complexType = Fbs.complex.InboundShipmentItems();
     complexType.add('quantityShipped', 'sellerSku');
 
     expect(complexType).toMatchSnapshot();
   });
 
   test('InboundShipmentPlanRequestItems#add should perform expected work', () => {
-    let complexType = Fbs.complex.InboundShipmentPlanRequestItems();
+    const complexType = Fbs.complex.InboundShipmentPlanRequestItems();
     complexType.add('sellerSku', 'asin', 'quantity', 'condition');
 
     expect(complexType).toMatchSnapshot();
   });
 
   test('CreateLineItems#add should perform expected work', () => {
-    let complexType = Fbs.complex.CreateLineItems();
+    const complexType = Fbs.complex.CreateLineItems();
     complexType.add('comment', 'giftMessage', 'decUnitValue', 'decValueCurrency', 'quantity', 'orderItemId', 'sellerSku');
 
     expect(complexType).toMatchSnapshot();
   });
 
   test('PreviewLineItems#add should perform expected work', () => {
-    let complexType = Fbs.complex.PreviewLineItems();
+    const complexType = Fbs.complex.PreviewLineItems();
     complexType.add('quantity', 'orderItemId', 'sellerSku', 'estShipWeight', 'weightCalcMethod');
 
     expect(complexType).toMatchSnapshot();
   });
 
   test('InboundShipmentItems#add should be able to chain', () => {
-    let complexType = Fbs.complex.InboundShipmentItems();
+    const complexType = Fbs.complex.InboundShipmentItems();
     complexType.add('quantityShipped', 'sellerSku')
                .add('quantityShipped1', 'sellerSku1');
 
@@ -67,7 +66,7 @@ describe('Fba', () => {
   });
 
   test('InboundShipmentPlanRequestItems#add should be able to chain', () => {
-    let complexType = Fbs.complex.InboundShipmentPlanRequestItems();
+    const complexType = Fbs.complex.InboundShipmentPlanRequestItems();
     complexType.add('sellerSku', 'asin', 'quantity', 'condition')
                .add('sellerSku1', 'asin1', 'quantity1', 'condition1');
 
@@ -75,15 +74,15 @@ describe('Fba', () => {
   });
 
   test('CreateLineItems#add should be able to chain', () => {
-    let complexType = Fbs.complex.CreateLineItems();
+    const complexType = Fbs.complex.CreateLineItems();
     complexType.add('comment', 'giftMessage', 'decUnitValue', 'decValueCurrency', 'quantity', 'orderItemId', 'sellerSku')
-               .add('comment1','giftMessage1','decUnitValue1','decValueCurrency1','quantity1','orderItemId1','sellerSku1');
+               .add('comment1', 'giftMessage1', 'decUnitValue1', 'decValueCurrency1', 'quantity1', 'orderItemId1', 'sellerSku1');
 
     expect(complexType).toMatchSnapshot();
   });
 
   test('PreviewLineItems#add should be able to chain', () => {
-    let complexType = Fbs.complex.PreviewLineItems();
+    const complexType = Fbs.complex.PreviewLineItems();
     complexType.add('quantity', 'orderItemId', 'sellerSku', 'estShipWeight', 'weightCalcMethod')
                .add('quantity1', 'orderItemId1', 'sellerSku1', 'estShipWeight1', 'weightCalcMethod1');
 
@@ -179,6 +178,4 @@ describe('Fba', () => {
     const request = Fbs.requests.outbound.ListAllFulfillmentOrdersByNextToken();
     expect(request).toMatchSnapshot();
   });
-
-
 });

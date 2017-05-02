@@ -76,7 +76,7 @@
     "webpack": "^2.4.1"
   },
   "scripts": {
-    "lint": "esw index.js lib __test__",
+    "lint": "eslint index.js lib __test__",
     "lint:watch": "npm run lint --watch",
     "test": "jest",
     "test:watch": "jest --watch",

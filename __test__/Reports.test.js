@@ -1,4 +1,4 @@
-import {Reports} from '../lib/mws';
+import { Reports } from '../lib/mws';
 
 describe('Reports', () => {
   test('should not be null', () => {
@@ -6,7 +6,7 @@ describe('Reports', () => {
   });
 
   test('should have enums with the expected values', () => {
-    const expectedEnumNames = ["Schedules", "ReportProcessingStatuses", "ReportOptions"];
+    const expectedEnumNames = ['Schedules', 'ReportProcessingStatuses', 'ReportOptions'];
     expect(Object.keys(Reports.enums)).toEqual(expectedEnumNames);
   });
 
@@ -29,17 +29,17 @@ describe('Reports', () => {
     expect(Object.keys(Reports.requests)).toEqual(requestNames);
   });
 
-  test('Enum Schedules should return expected values', ()=> {
+  test('Enum Schedules should return expected values', () => {
     const enumType = Reports.enums.Schedules();
     expect(enumType).toMatchSnapshot();
   });
 
-  test('Enum ReportProcessingStatuses should return expected values', ()=> {
+  test('Enum ReportProcessingStatuses should return expected values', () => {
     const enumType = Reports.enums.ReportProcessingStatuses();
     expect(enumType).toMatchSnapshot();
   });
 
-  test('Enum ReportOptions should return expected values', ()=> {
+  test('Enum ReportOptions should return expected values', () => {
     const enumType = Reports.enums.ReportOptions();
     expect(enumType).toMatchSnapshot();
   });
@@ -114,5 +114,4 @@ describe('Reports', () => {
     const request = Reports.requests.UpdateReportAcknowledgements();
     expect(request).toMatchSnapshot();
   });
-
 });

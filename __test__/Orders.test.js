@@ -1,7 +1,6 @@
-import {Orders} from '../lib/mws';
+import { Orders } from '../lib/mws';
 
 describe('Orders', () => {
-
   test('should not be null', () => {
     expect(Orders).toBeDefined();
   });
@@ -59,5 +58,4 @@ describe('Orders', () => {
     const request = Orders.requests.ListOrderItemsByNextToken();
     expect(request).toMatchSnapshot();
   });
-
 });

@@ -1,7 +1,6 @@
-import {Products} from '../lib/mws';
+import { Products } from '../lib/mws';
 
 describe('Products', () => {
-
   test('should not be null', () => {
     expect(Products).toBeDefined();
   });
@@ -95,6 +94,4 @@ describe('Products', () => {
     const request = Products.requests.GetMyPriceForSKU();
     expect(request).toMatchSnapshot();
   });
-
-
 });

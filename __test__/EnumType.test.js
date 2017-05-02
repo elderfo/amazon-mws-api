@@ -42,5 +42,4 @@ describe('Enum', () => {
 
     expect(e.values()).toEqual([choices[1]]);
   });
-
 });

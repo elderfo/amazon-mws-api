@@ -1,9 +1,21 @@
-jest.mock('request', () => {
-  return jest.fn();
-});
-import Client from '../lib/AmazonMwsClient';
 import uuid from 'uuid';
 import request from 'request';
+
+import Client from '../lib/AmazonMwsClient';
+
+jest.mock('request', () => jest.fn());
+
+const getClientRequestOptions = () => ({
+  accessKey: uuid.v4(),
+  secretAccessKey: uuid.v4(),
+  merchantId: uuid.v4(),
+  api: {
+    path: uuid.v4(),
+    version: uuid.v4(),
+  },
+  action: uuid.v4(),
+  query: {},
+});
 
 describe('AmazonMwsClient', () => {
   beforeEach(() => {
@@ -15,12 +27,12 @@ describe('AmazonMwsClient', () => {
   });
 
   test('Constructor should populate expected properties', () => {
-    const client = new Client("accessKeyId", "secretAccessKey", "merchantId", {});
+    const client = new Client('accessKeyId', 'secretAccessKey', 'merchantId', {});
     expect(client).toMatchSnapshot();
   });
 
   test('Constructor with no options should populate expected properties', () => {
-    const client = new Client("accessKeyId", "secretAccessKey", "merchantId");
+    const client = new Client('accessKeyId', 'secretAccessKey', 'merchantId');
     expect(client).toMatchSnapshot();
   });
 
@@ -48,7 +60,12 @@ describe('AmazonMwsClient', () => {
   test('#call when not performing upload should contain expected properties', () => {
     const requestConfig = getClientRequestOptions();
 
-    const client = new Client(requestConfig.accessKey, requestConfig.secretAccessKey, requestConfig.merchantId);
+    const client = new Client(
+      requestConfig.accessKey,
+      requestConfig.secretAccessKey,
+      requestConfig.merchantId,
+    );
+
     client.call(requestConfig.api, requestConfig.action, {});
 
     expect(request).toHaveBeenCalled();
@@ -63,7 +80,6 @@ describe('AmazonMwsClient', () => {
     expect(form.Version).toBe(requestConfig.api.version);
     expect(form.AWSAccessKeyId).toBe(requestConfig.accessKey);
     expect(form.SellerId).toBe(requestConfig.merchantId);
-
   });
 
   test('#call when performing upload should contain expected properties', () => {
@@ -72,7 +88,10 @@ describe('AmazonMwsClient', () => {
     requestConfig.api.upload = true;
     requestConfig.query._BODY_ = body;
 
-    const client = new Client(requestConfig.accessKey, requestConfig.secretAccessKey, requestConfig.merchantId);
+    const client = new Client(requestConfig.accessKey,
+      requestConfig.secretAccessKey,
+      requestConfig.merchantId,
+    );
     client.call(requestConfig.api, requestConfig.action, requestConfig.query);
 
     expect(request).toHaveBeenCalled();
@@ -93,14 +112,18 @@ describe('AmazonMwsClient', () => {
     expect(parameters.Version).toBe(requestConfig.api.version);
     expect(parameters.AWSAccessKeyId).toBe(requestConfig.accessKey);
     expect(parameters.SellerId).toBe(requestConfig.merchantId);
-
   });
 
   test('#call with an authToken populates expected fields', () => {
     const requestConfig = getClientRequestOptions();
     const clientOptions = { authToken: uuid.v4() };
 
-    const client = new Client(requestConfig.accessKey, requestConfig.secretAccessKey, requestConfig.merchantId, clientOptions);
+    const client = new Client(
+      requestConfig.accessKey,
+      requestConfig.secretAccessKey,
+      requestConfig.merchantId,
+      clientOptions,
+    );
     client.call(requestConfig.api, requestConfig.action, requestConfig.query);
 
     expect(request).toHaveBeenCalled();
@@ -116,7 +139,11 @@ describe('AmazonMwsClient', () => {
     const requestConfig = getClientRequestOptions();
     requestConfig.api.legacy = true;
 
-    const client = new Client(requestConfig.accessKey, requestConfig.secretAccessKey, requestConfig.merchantId);
+    const client = new Client(
+      requestConfig.accessKey,
+      requestConfig.secretAccessKey,
+      requestConfig.merchantId,
+    );
     client.call(requestConfig.api, requestConfig.action, requestConfig.query);
 
     expect(request).toHaveBeenCalled();
@@ -130,34 +157,19 @@ describe('AmazonMwsClient', () => {
 
   test('#invoke should perform expected work', () => {
     const query = { testParam: uuid.v4() };
-    const request = {
+    const req = {
       query: jest.fn(() => Promise.resolve(query)),
       api: uuid.v4(),
-      action: uuid.v4()
+      action: uuid.v4(),
     };
 
     const client = new Client(uuid.v4(), uuid.v4(), uuid.v4());
     client.call = jest.fn((api, action, _query) => {
-      expect(api).toBe(request.api);
-      expect(action).toBe(request.action);
+      expect(api).toBe(req.api);
+      expect(action).toBe(req.action);
       expect(_query).toBe(query);
     });
 
-    return client.invoke(request);
+    return client.invoke(req);
   });
-
-  const getClientRequestOptions = () => {
-    return {
-      accessKey: uuid.v4(),
-      secretAccessKey: uuid.v4(),
-      merchantId: uuid.v4(),
-      api: {
-        path: uuid.v4(),
-        version: uuid.v4()
-      },
-      action: uuid.v4(),
-      query: {}
-    };
-  };
-
 });
