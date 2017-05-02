@@ -58,6 +58,7 @@
     "babel-preset-es2015": "^6.18.0",
     "colors": "^1.1.2",
     "coveralls": "^2.11.15",
+    "cross-env": "^4.0.0",
     "dotenv": "^2.0.0",
     "eslint": "^3.10.2",
     "eslint-config-elderfo": "^1.1.1",
@@ -84,7 +85,7 @@
     "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "scrub": "babel-node ./__test__/tools/scrubJsonFiles.js",
-    "build": "webpack"
+    "build": "cross-env BABEL_ENV=rollup rollup -c"
   },
   "bugs": {
     "url": "https://github.com/elderfo/amazon-mws-api/issues"
