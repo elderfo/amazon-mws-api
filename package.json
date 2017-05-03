@@ -78,11 +78,11 @@
   "scripts": {
     "lint": "eslint index.js lib __test__",
     "lint:watch": "npm run lint --watch",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:debug": "node --debug-brk ./node_modules/.bin/jest -i",
-    "test:coverage": "jest --coverage",
-    "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "cross-env BABEL_ENV=jest jest",
+    "test:watch": "cross-env BABEL_ENV=jest jest --watch",
+    "test:debug": "cross-env BABEL_ENV=jest node --debug-brk ./node_modules/.bin/jest -i",
+    "test:coverage": "cross-env BABEL_ENV=jest jest --coverage",
+    "test:coveralls": "cross-env BABEL_ENV=jest jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "scrub": "babel-node ./__test__/tools/scrubJsonFiles.js",
     "build": "cross-env BABEL_ENV=rollup rollup -c"
