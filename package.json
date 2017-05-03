@@ -32,7 +32,7 @@
       "email": "cgetsfred@gmail.com"
     }
   ],
-  "main": "./dist/prod.js",
+  "main": "./dist/index.js",
   "directories": {
     "lib": "./lib"
   },
@@ -85,7 +85,8 @@
     "test:coveralls": "cross-env BABEL_ENV=jest jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "scrub": "babel-node ./__test__/tools/scrubJsonFiles.js",
-    "build": "cross-env BABEL_ENV=rollup rollup -c"
+    "build": "cross-env BABEL_ENV=rollup rollup -c",
+    "precommit": "yarn lint && yarn test && yarn build && git add ./dist/*"
   },
   "bugs": {
     "url": "https://github.com/elderfo/amazon-mws-api/issues"

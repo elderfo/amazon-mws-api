@@ -5,7 +5,7 @@ import babel from 'rollup-plugin-babel';
 export default {
   entry: 'lib/mws.js',
   format: 'cjs',
-  dest: 'dist/prod.js', // equivalent to --output
+  dest: 'dist/index.js', // equivalent to --output
   sourceMap: true,
   external: ['querystring', 'crypto', 'xml2js', 'request', 'tls'],
   plugins: [

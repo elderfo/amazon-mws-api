@@ -1,5 +1,5 @@
 .env
-dist/
+
 yarn-error.log
 .DS_Store
 .coveralls.yml
