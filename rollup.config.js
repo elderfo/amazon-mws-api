@@ -7,8 +7,9 @@ export default {
   format: 'cjs',
   dest: 'dist/prod.js', // equivalent to --output
   sourceMap: true,
+  external: ['querystring', 'crypto', 'xml2js', 'request', 'tls'],
   plugins: [
-   // resolve(),
+    // resolve(),
     babel({
       exclude: 'node_modules/**/*',
     }),
