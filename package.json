@@ -43,7 +43,8 @@
   "dependencies": {
     "bluebird": "^3.4.6",
     "request": "^2.81.0",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -75,7 +76,9 @@
     "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "scrub": "babel-node ./__test__/tools/scrubJsonFiles.js",
-    "build": "webpack"
+    "build": "webpack",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "bugs": {
     "url": "https://github.com/elderfo/amazon-mws-api/issues"
@@ -86,5 +89,6 @@
       "lib/**/*.{js,jsx}",
       "!**/__tests__/tools/**"
     ]
-  }
+  },
+  "snyk": true
 }
